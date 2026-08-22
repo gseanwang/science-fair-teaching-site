@@ -7,14 +7,13 @@ export const site = {
   brand: "世界科展學院",
   brandEn: "World Science Academy",
 
-  // ---------- 首頁最上方大標 ----------
+  // ---------- 首頁最上方大標(英文在上、中文在下)----------
   hero: {
-    badge: "🌏 台灣 · 美國 · 中國 — 全球科展輔導",
+    badge: "🌏 Taiwan · USA · China — Worldwide Science Fair Mentorship",
+    titleEn: "Helping Your Child Take the World Stage",
     title: "讓孩子站上世界的舞台",
     subtitle:
-      "世界科展學院 —— 為孩子量身規劃完整研究輔導,從選題到自信上台發表,對接台灣、美國、中國等世界各地的科展賽事。",
-    subtitleEn:
-      "World Science Academy — helping your child take the world stage.",
+      "世界科展學院 World Science Academy —— 為孩子量身規劃完整研究輔導,從選題到自信上台發表,對接台灣、美國、中國等世界各地的科展賽事。",
     ctaText: "立即諮詢",
     ctaHref: "#contact",
     secondaryText: "了解課程",
@@ -89,6 +88,7 @@ export const site = {
 
   // ---------- 為什麼選擇我們 ----------
   whyUs: [
+    { title: "評審視角教學", desc: "導師曾任區域科展評審,清楚評審重視什麼,直接教到得分關鍵。" },
     { title: "深度客製化", desc: "針對您孩子所在地區的科展規則與評審標準量身設計。" },
     { title: "真實研究主題", desc: "研究當今業界真正部署的技術(如 AI、機器人、環保科技)。" },
     { title: "學術能力雙提升", desc: "科學寫作 × 口語表達,為高中大學研究打下基礎。" },
@@ -187,6 +187,59 @@ export const site = {
     { q: "最後孩子會產出什麼?", a: "完整研究論文(8–12 頁,中/英文皆可)、競賽摘要、實體/數位海報,以及口頭發表與問答能力。" },
     { q: "費用怎麼算?", a: "依班別(一對一 / 一對二 / 一對三)不同,歡迎透過下方表單留下聯絡方式,我們會主動與您說明方案與報價。" },
   ],
+
+  // ---------- 師資群(獨立頁面 /faculty)----------
+  faculty: {
+    title: "師資群",
+    desc: "帶孩子做研究的,是真正做過研究、也坐過評審桌的人。",
+    // 要新增老師,複製一個 { } 區塊貼在下面即可。
+    members: [
+      {
+        name: "Sean Wang 博士",
+        nameEn: "Dr. Sean Wang",
+        role: "創辦人・首席講師",
+        credential: "美國佛羅里達大學 University of Florida 博士(Ph.D.)",
+        tagline:
+          "把嚴謹的研究方法帶到各種題目 —— 從 AI、環保到生醫,引導學生把好奇心變成得獎作品。",
+        // 照片放到 public/faculty/ 底下再把路徑填這裡(例:"/faculty/sean.jpg");留空則顯示英文縮寫頭像。
+        photo: "",
+        groups: [
+          {
+            title: "我也坐過評審桌",
+            star: true,
+            points: [
+              "JSHS 美國高中科學競賽 區域評審",
+              "國際期刊論文 審稿人",
+              "學會專書 章節審查委員",
+            ],
+            footer: "我知道評審在看什麼",
+          },
+          {
+            title: "研究實力",
+            points: [
+              "第一作者國際期刊論文發表",
+              "Python / R 數據建模",
+              "AI / 機器學習應用",
+            ],
+          },
+          {
+            title: "教學經驗",
+            points: [
+              "指導過 7 位以上年輕研究者",
+              "K-12 教師工作坊 講師",
+              "中英雙語教學",
+              "多年一對一 / 小班輔導",
+            ],
+          },
+        ],
+        awards: [
+          "台灣教育部 勵學獎學金 得主",
+          "國際期刊第一作者論文發表",
+          "多項國際學會獎項",
+        ],
+      },
+    ],
+  },
 
   // ---------- 諮詢表單 ----------
   contact: {

@@ -9,9 +9,9 @@ export default function HomePage() {
       {/* ===================== HERO ===================== */}
       <section className="hero">
         <span className="hero-badge">{site.hero.badge}</span>
-        <h1>{site.hero.title}</h1>
+        <h1 className="hero-title-en">{site.hero.titleEn}</h1>
+        <p className="hero-title-zh">{site.hero.title}</p>
         <p className="hero-sub">{site.hero.subtitle}</p>
-        <p className="hero-sub-en">{site.hero.subtitleEn}</p>
         <div className="hero-cta">
           <a className="btn btn-primary btn-lg" href={site.hero.ctaHref}>
             {site.hero.ctaText}

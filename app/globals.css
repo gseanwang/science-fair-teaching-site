@@ -57,7 +57,10 @@ h1, h2, h3, h4 { line-height: 1.3; }
   position: sticky; top: 0; z-index: 20;
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
-.logo { font-weight: 800; font-size: 1.1rem; }
+.logo { display: flex; align-items: baseline; gap: 8px; }
+.logo-en { font-weight: 800; font-size: 1.1rem; }
+.logo-zh { font-size: 0.85rem; color: var(--muted); font-weight: 600; }
+@media (max-width: 560px) { .logo-zh { display: none; } }
 .nav { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
 .nav a { padding: 6px 12px; color: var(--muted); font-weight: 600; font-size: 0.95rem; border-radius: 8px; }
 .nav a:hover { color: var(--brand); background: var(--brand-soft); }
@@ -75,9 +78,9 @@ h1, h2, h3, h4 { line-height: 1.3; }
   display: inline-block; background: var(--brand-soft); color: var(--brand-dark);
   font-weight: 700; font-size: 0.9rem; padding: 6px 16px; border-radius: 999px; margin-bottom: 22px;
 }
-.hero h1 { font-size: 2.9rem; margin: 0 0 18px; letter-spacing: -1px; }
-.hero-sub { font-size: 1.2rem; color: var(--text); max-width: 680px; margin: 0 auto 8px; }
-.hero-sub-en { font-size: 0.98rem; color: var(--muted); max-width: 640px; margin: 0 auto 30px; font-style: italic; }
+.hero-title-en { font-size: 3rem; margin: 0 0 10px; letter-spacing: -1px; line-height: 1.15; }
+.hero-title-zh { font-size: 1.75rem; font-weight: 700; color: var(--brand-dark); margin: 0 0 18px; }
+.hero-sub { font-size: 1.12rem; color: var(--muted); max-width: 700px; margin: 0 auto 30px; }
 .hero-cta { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 
 /* ---------- 三大特色 ---------- */
@@ -223,6 +226,43 @@ h1, h2, h3, h4 { line-height: 1.3; }
 .form-placeholder { max-width: 620px; margin: 0 auto; background: rgba(255,255,255,0.15);
   border: 1.5px dashed rgba(255,255,255,0.5); border-radius: var(--radius); padding: 30px; font-weight: 600; }
 .form-error { color: #ffd7d7; margin-top: 12px; text-align: center; font-weight: 600; }
+
+/* ---------- 師資群頁 ---------- */
+.faculty-member { padding-top: 20px; }
+.fm-head { display: flex; gap: 28px; align-items: center; margin-bottom: 24px; flex-wrap: wrap; }
+.fm-avatar {
+  flex-shrink: 0; width: 120px; height: 120px; border-radius: 24px; overflow: hidden;
+  background: linear-gradient(135deg, var(--brand), var(--brand-dark)); color: #fff;
+  display: flex; align-items: center; justify-content: center; font-size: 2.4rem; font-weight: 800;
+  box-shadow: var(--shadow);
+}
+.fm-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.fm-head-text { flex: 1; min-width: 260px; }
+.fm-role { color: var(--brand); font-weight: 700; font-size: 0.9rem; letter-spacing: 0.5px; }
+.fm-name { font-size: 2rem; margin: 4px 0 6px; }
+.fm-name-en { font-size: 1.1rem; color: var(--muted); font-weight: 500; }
+.fm-credential { font-weight: 600; color: var(--text); margin-bottom: 8px; }
+.fm-tagline { color: var(--muted); margin: 0; max-width: 620px; }
+
+.fm-awards {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px;
+  background: #fff8e6; border: 1px solid #f2e2b8; border-radius: 12px; padding: 14px 18px; margin-bottom: 26px;
+}
+.fm-awards-label { font-weight: 700; color: #a6791b; }
+.fm-award { background: #fff; border: 1px solid #f0e4c0; border-radius: 999px; padding: 5px 14px; font-size: 0.9rem; font-weight: 600; }
+
+.fm-groups { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.fm-group {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 24px; box-shadow: var(--shadow); border-top: 4px solid var(--brand);
+}
+.fm-group.star { border-top-color: #d99a1c; }
+.fm-group h3 { margin: 0 0 14px; font-size: 1.15rem; }
+.fm-star { color: #d99a1c; }
+.fm-group ul { list-style: none; margin: 0; padding: 0; }
+.fm-group li { position: relative; padding-left: 20px; margin-bottom: 10px; color: var(--text); font-size: 0.96rem; }
+.fm-group li::before { content: "•"; position: absolute; left: 2px; color: var(--brand); font-size: 1.2rem; top: -3px; }
+.fm-group-footer { margin-top: 14px; padding-top: 12px; border-top: 1px dashed var(--border); font-weight: 700; color: #a6791b; }
 
 /* ---------- Footer ---------- */
 .site-footer { padding: 28px 0; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.9rem; text-align: center; }

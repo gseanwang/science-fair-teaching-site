@@ -119,11 +119,11 @@ export const content = {
       backSub: "留下联系方式,我们会主动与您联系。",
       backCta: "前往咨询 →",
       aboutLabel: "ABOUT US · 你的导师",
-      awardsLabel: "🏅 荣誉",
+      awardsLabel: "🏅 精选成就",
       members: [
         {
           name: "Sean Wang 博士", nameEn: "Dr. Sean Wang", role: "创办人・首席讲师",
-          credential: "美国佛罗里达大学 University of Florida 博士(Ph.D.)",
+          credential: "博士(Ph.D.)· 美国佛罗里达大学 University of Florida",
           tagline: "把严谨的研究方法带到各种题目 —— 从 AI、环保到生医,引导学生把好奇心变成得奖作品。",
           photo: SEAN_PHOTO,
           groups: [
@@ -255,11 +255,11 @@ export const content = {
       backSub: "留下聯絡方式,我們會主動與您聯繫。",
       backCta: "前往諮詢 →",
       aboutLabel: "ABOUT US · 你的導師",
-      awardsLabel: "🏅 榮譽",
+      awardsLabel: "🏅 精選成就",
       members: [
         {
           name: "Sean Wang 博士", nameEn: "Dr. Sean Wang", role: "創辦人・首席講師",
-          credential: "美國佛羅里達大學 University of Florida 博士(Ph.D.)",
+          credential: "博士(Ph.D.)· 美國佛羅里達大學 University of Florida",
           tagline: "把嚴謹的研究方法帶到各種題目 —— 從 AI、環保到生醫,引導學生把好奇心變成得獎作品。",
           photo: SEAN_PHOTO,
           groups: [
@@ -391,15 +391,15 @@ export const content = {
       backSub: "Leave your contact info and we'll reach out.",
       backCta: "Get in touch →",
       aboutLabel: "ABOUT US · Your Mentor",
-      awardsLabel: "🏅 Honors",
+      awardsLabel: "🏅 Selected Achievements",
       members: [
         {
           name: "Dr. Sean Wang", nameEn: "Dr. Sean Wang", role: "Founder & Lead Instructor",
-          credential: "University of Florida · Ph.D.",
+          credential: "Ph.D., University of Florida",
           tagline: "Bringing rigorous research methods to any topic — from AI and sustainability to biomedicine — guiding students to award-winning work.",
           photo: SEAN_PHOTO,
           groups: [
-            { title: "Judge & Reviewer Experience", star: true, points: ["Regional judge, JSHS high-school science competition", "Peer reviewer for international journals", "Chapter reviewer for academic books"], footer: "I know what judges look for" },
+            { title: "Judge & Reviewer Experience", star: true, points: ["Regional judge, JSHS high-school science competition", "Peer reviewer for international journals", "Chapter reviewer for academic books"], footer: "I know what makes research stand out" },
             { title: "Research Strength", points: ["First-author international journal publications", "Data modeling in Python / R", "AI / machine-learning applications"] },
             { title: "Teaching Experience", points: ["Mentored 7+ young researchers", "Instructor at K-12 teacher workshops", "Bilingual (Chinese/English) teaching", "Years of 1-on-1 / small-group coaching"] },
           ],

@@ -34,7 +34,10 @@ export default async function FacultyPage({ params }) {
             <div className="fm-head-text">
               <div className="fm-role">{m.role}</div>
               <h2 className="fm-name">
-                {m.name} <span className="fm-name-en">{m.nameEn}</span>
+                {m.name}
+                {m.nameEn && m.nameEn !== m.name && (
+                  <span className="fm-name-en">{m.nameEn}</span>
+                )}
               </h2>
               <div className="fm-credential">{m.credential}</div>
               <p className="fm-tagline">{m.tagline}</p>

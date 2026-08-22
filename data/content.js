@@ -1,5 +1,5 @@
 // ============================================================
-//  三語內容:English(en,預設)、繁體(tw)、简体(cn);順序 EN → 繁 → 简
+//  三語內容:繁體(tw,預設)、English(en)、简体(cn);順序 繁 → EN → 简
 //  結構完全相同,改文字就找對應語言那一塊。
 //  三種語言共用的東西(表單 key、照片、簡報檔名)在每塊都一樣,
 //  要換的話三塊都要一起改。
@@ -10,11 +10,11 @@ const ACCESS_KEY = "12beea04-d204-49e8-8e55-7f9296eda546";
 const SEAN_PHOTO = "/faculty/sean-2.jpg";
 
 export const locales = [
-  { code: "en", label: "EN", htmlLang: "en" },
   { code: "tw", label: "繁體", htmlLang: "zh-Hant" },
+  { code: "en", label: "EN", htmlLang: "en" },
   { code: "cn", label: "简体", htmlLang: "zh-Hans" },
 ];
-export const defaultLocale = "en";
+export const defaultLocale = "tw";
 
 export const content = {
   // ========================= 简体 =========================
@@ -297,18 +297,18 @@ export const content = {
     footerNote: "Est. 2026",
 
     hero: {
-      badge: "🌏 Asia · Americas · Europe — Worldwide Science Fair Mentorship",
+      badge: "🌏 Asia · America · Europe — Worldwide Science Fair Mentorship",
       titleMain: "Helping Your Child Take the World Stage",
       titleSub: "",
       subtitle:
-        "World Science Academy — personalized research mentorship for your child, aligned with science fairs across Asia, the Americas, Europe, and beyond, building a standout academic profile for Ivy League and other top universities.",
+        "World Science Academy — personalized research mentorship for your child, aligned with science fairs across Asia, America, Europe, and beyond, building a standout academic profile for Ivy League and other top universities.",
       ctaText: "Book a Free Consultation",
       ctaHref: "#contact",
       secondaryText: "Explore the Program",
       secondaryHref: "#course",
     },
     highlights: [
-      { icon: "🌏", title: "Local Fair Alignment", desc: "Tailored to the rules and submission specs of the science fair in your region (Asia, the Americas, Europe, and more)." },
+      { icon: "🌏", title: "Local Fair Alignment", desc: "Tailored to the rules and submission specs of the science fair in your region (Asia, America, Europe, and more)." },
       { icon: "📝", title: "Full Paper Guidance", desc: "From topic selection and research to a complete paper (Chinese or English), guided every step of the way." },
       { icon: "🎤", title: "Presentation Training", desc: "Poster skills plus judge Q&A simulation, so your child is confident on stage." },
     ],
@@ -376,8 +376,8 @@ export const content = {
     ],
     faqTitle: "Frequently Asked Questions",
     faq: [
-      { q: "Online or in person?", a: "Fully online via Google Meet or Zoom — join from Asia, the Americas, Europe, or anywhere." },
-      { q: "Which regions' fairs can you coach?", a: "Asia, the Americas, Europe, and other regions — planned around each local fair's rules and judging criteria." },
+      { q: "Online or in person?", a: "Fully online via Google Meet or Zoom — join from Asia, America, Europe, or anywhere." },
+      { q: "Which regions' fairs can you coach?", a: "Asia, America, Europe, and other regions — planned around each local fair's rules and judging criteria." },
       { q: "What if my child's English isn't strong?", a: "That's fine. Papers are written in Chinese or English per the competition; classes and parent communication are in Chinese, and we guide your child through the writing step by step." },
       { q: "How long is the program?", a: "Designed as 16 weeks / 32 sessions, flexibly adjusted to the student's progress and the fair's deadline; extra sessions available." },
       { q: "What will my child produce?", a: "A complete research paper (8–12 pages, Chinese or English), a competition abstract, a physical/digital poster, and oral presentation & Q&A skills." },

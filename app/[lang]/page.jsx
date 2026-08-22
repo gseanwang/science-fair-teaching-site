@@ -16,14 +16,17 @@ export default async function HomePage({ params }) {
   return (
     <>
       {/* ===================== HERO ===================== */}
-      <section className="hero">
-        <span className="hero-badge">{c.hero.badge}</span>
-        <h1 className="hero-title-en">{c.hero.titleMain}</h1>
-        {c.hero.titleSub && <p className="hero-title-zh">{c.hero.titleSub}</p>}
-        <p className="hero-sub">{c.hero.subtitle}</p>
-        <div className="hero-cta">
-          <a className="btn btn-primary btn-lg" href={`/${lang}${c.hero.ctaHref}`}>{c.hero.ctaText}</a>
-          <a className="btn btn-ghost btn-lg" href={`/${lang}${c.hero.secondaryHref}`}>{c.hero.secondaryText}</a>
+      <section className="hero hero-photo">
+        <div className="hero-overlay" />
+        <div className="hero-content">
+          <span className="hero-badge">{c.hero.badge}</span>
+          <h1 className="hero-title-en">{c.hero.titleMain}</h1>
+          {c.hero.titleSub && <p className="hero-title-zh">{c.hero.titleSub}</p>}
+          <p className="hero-sub">{c.hero.subtitle}</p>
+          <div className="hero-cta">
+            <a className="btn btn-primary btn-lg" href={`/${lang}${c.hero.ctaHref}`}>{c.hero.ctaText}</a>
+            <a className="btn btn-hero-ghost btn-lg" href={`/${lang}${c.hero.secondaryHref}`}>{c.hero.secondaryText}</a>
+          </div>
         </div>
       </section>
 

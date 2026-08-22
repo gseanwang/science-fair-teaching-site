@@ -110,6 +110,29 @@ h1, h2, h3, h4 { line-height: 1.3; }
 .hero-sub { font-size: 1.12rem; color: var(--muted); max-width: 700px; margin: 0 auto 30px; }
 .hero-cta { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 
+/* ---------- Hero with background photo ---------- */
+.hero-photo {
+  position: relative; max-width: none; width: 100%; margin: 0; padding: 0;
+  text-align: left; overflow: hidden;
+  background: #0E1A2B url('/hero.jpg') center 30% / cover no-repeat;
+}
+.hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(90deg, rgba(9,16,28,0.9) 0%, rgba(9,16,28,0.72) 42%, rgba(9,16,28,0.45) 100%);
+}
+.hero-content {
+  position: relative; max-width: 1120px; margin: 0 auto; padding: 108px 20px 96px;
+}
+.hero-photo .hero-badge {
+  background: rgba(156,192,255,0.16); color: #C7D6F5; border: 1px solid rgba(156,192,255,0.3);
+}
+.hero-photo .hero-title-en { color: #ffffff; max-width: 900px; }
+.hero-photo .hero-title-zh { color: #9CC0FF; }
+.hero-photo .hero-sub { color: #C3CEDF; margin-left: 0; margin-right: 0; max-width: 620px; }
+.hero-photo .hero-cta { justify-content: flex-start; }
+.btn-hero-ghost { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.5); color: #fff; }
+.btn-hero-ghost:hover { background: rgba(255,255,255,0.16); border-color: #fff; color: #fff; }
+
 /* ---------- 三大特色 ---------- */
 .highlight-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 22px; }
 .highlight-card {

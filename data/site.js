@@ -204,7 +204,7 @@ export const site = {
         tagline:
           "把嚴謹的研究方法帶到各種題目 —— 從 AI、環保到生醫,引導學生把好奇心變成得獎作品。",
         // 照片放到 public/faculty/ 底下。檔案還沒放進去時會自動顯示英文縮寫,放進去後自動變照片。
-        photo: "/faculty/sean.jpg",
+        photo: "/faculty/sean-2.jpg",
         groups: [
           {
             title: "我也坐過評審桌",

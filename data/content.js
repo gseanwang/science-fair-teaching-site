@@ -25,18 +25,18 @@ export const content = {
     footerNote: "创立于 2026 · Est. 2026",
 
     hero: {
-      badge: "🌏 台湾 · 美国 · 中国 — 全球科展辅导",
+      badge: "🌏 亚太 · 美国 · 欧洲 — 全球科展辅导",
       titleMain: "Helping Your Child Take the World Stage",
       titleSub: "让孩子站上世界的舞台",
       subtitle:
-        "世界科展学院 World Science Academy —— 为孩子量身规划完整研究辅导,对接台湾、美国、中国等世界各地的科展赛事,打造申请常春藤等世界名校的亮眼学术履历。",
+        "世界科展学院 World Science Academy —— 为孩子量身规划完整研究辅导,对接亚太、美国、欧洲等世界各地的科展赛事,打造申请常春藤等世界名校的亮眼学术履历。",
       ctaText: "预约免费咨询",
       ctaHref: "#contact",
       secondaryText: "了解课程",
       secondaryHref: "#course",
     },
     highlights: [
-      { icon: "🌏", title: "各地科展对接", desc: "配合您所在地区(台湾、美国、中国等)的科展赛事,制定最适合的研究方向与提交规格。" },
+      { icon: "🌏", title: "各地科展对接", desc: "配合您所在地区(亚太、美国、欧洲等)的科展赛事,制定最适合的研究方向与提交规格。" },
       { icon: "📝", title: "完整论文指导", desc: "从选题、搜集资料到撰写完整研究论文(中/英文皆可),全程陪跑。" },
       { icon: "🎤", title: "口头发表训练", desc: "海报展示技巧 + 评审问答模拟,让孩子上场不紧张。" },
     ],
@@ -93,8 +93,8 @@ export const content = {
     ],
     faqTitle: "常见问答",
     faq: [
-      { q: "上课是线上还是实体?", a: "全程线上,使用 Google Meet 或 Zoom,无论在台湾、美国、中国或其他地区皆可参与。" },
-      { q: "可以指导哪些地区的科展?", a: "台湾、美国、中国及其他各地的科展赛事都能对接,依当地规则与评审标准量身规划。" },
+      { q: "上课是线上还是实体?", a: "全程线上,使用 Google Meet 或 Zoom,无论在亚太、美国、欧洲或其他地区皆可参与。" },
+      { q: "可以指导哪些地区的科展?", a: "亚太、美国、欧洲及其他各地的科展赛事都能对接,依当地规则与评审标准量身规划。" },
       { q: "孩子英文不够好可以吗?", a: "可以。论文依比赛需求以中文或英文撰写;上课与家长沟通全程中文,老师会逐步带着孩子完成论文写作。" },
       { q: "要上多久?", a: "以 16 周、32 堂为基础设计,实际进度依学生状况与科展截止日期弹性调整,必要时可加课。" },
       { q: "最后孩子会产出什么?", a: "完整研究论文(8–12 页,中/英文皆可)、竞赛摘要、实体/数字海报,以及口头发表与问答能力。" },
@@ -150,18 +150,18 @@ export const content = {
     footerNote: "創立於 2026 · Est. 2026",
 
     hero: {
-      badge: "🌏 台灣 · 美國 · 中國 — 全球科展輔導",
+      badge: "🌏 亞太 · 美國 · 歐洲 — 全球科展輔導",
       titleMain: "Helping Your Child Take the World Stage",
       titleSub: "讓孩子站上世界的舞台",
       subtitle:
-        "世界科展學院 World Science Academy —— 為孩子量身規劃完整研究輔導,對接台灣、美國、中國等世界各地的科展賽事,打造申請常春藤等世界名校的亮眼學術履歷。",
+        "世界科展學院 World Science Academy —— 為孩子量身規劃完整研究輔導,對接亞太、美國、歐洲等世界各地的科展賽事,打造申請常春藤等世界名校的亮眼學術履歷。",
       ctaText: "預約免費諮詢",
       ctaHref: "#contact",
       secondaryText: "了解課程",
       secondaryHref: "#course",
     },
     highlights: [
-      { icon: "🌏", title: "各地科展對接", desc: "配合您所在地區(台灣、美國、中國等)的科展賽事,制定最適合的研究方向與提交規格。" },
+      { icon: "🌏", title: "各地科展對接", desc: "配合您所在地區(亞太、美國、歐洲等)的科展賽事,制定最適合的研究方向與提交規格。" },
       { icon: "📝", title: "完整論文指導", desc: "從選題、蒐集資料到撰寫完整研究論文(中/英文皆可),全程陪跑。" },
       { icon: "🎤", title: "口頭發表訓練", desc: "海報展示技巧 + 評審問答模擬,讓孩子上場不緊張。" },
     ],
@@ -218,8 +218,8 @@ export const content = {
     ],
     faqTitle: "常見問答",
     faq: [
-      { q: "上課是線上還是實體?", a: "全程線上,使用 Google Meet 或 Zoom,無論在台灣、美國、中國或其他地區皆可參與。" },
-      { q: "可以指導哪些地區的科展?", a: "台灣、美國、中國及其他各地的科展賽事都能對接,依當地規則與評審標準量身規劃。" },
+      { q: "上課是線上還是實體?", a: "全程線上,使用 Google Meet 或 Zoom,無論在亞太、美國、歐洲或其他地區皆可參與。" },
+      { q: "可以指導哪些地區的科展?", a: "亞太、美國、歐洲及其他各地的科展賽事都能對接,依當地規則與評審標準量身規劃。" },
       { q: "孩子英文不夠好可以嗎?", a: "可以。論文依比賽需求以中文或英文撰寫;上課與家長溝通全程中文,老師會逐步帶著孩子完成論文寫作。" },
       { q: "要上多久?", a: "以 16 週、32 堂為基礎設計,實際進度依學生狀況與科展截止日期彈性調整,必要時可加課。" },
       { q: "最後孩子會產出什麼?", a: "完整研究論文(8–12 頁,中/英文皆可)、競賽摘要、實體/數位海報,以及口頭發表與問答能力。" },
@@ -275,18 +275,18 @@ export const content = {
     footerNote: "Est. 2026",
 
     hero: {
-      badge: "🌏 Taiwan · USA · China — Worldwide Science Fair Mentorship",
+      badge: "🌏 Asia-Pacific · USA · Europe — Worldwide Science Fair Mentorship",
       titleMain: "Helping Your Child Take the World Stage",
       titleSub: "",
       subtitle:
-        "World Science Academy — personalized research mentorship for your child, aligned with science fairs in Taiwan, the USA, China, and beyond, building a standout academic profile for Ivy League and other top universities.",
+        "World Science Academy — personalized research mentorship for your child, aligned with science fairs across Asia-Pacific, the USA, Europe, and beyond, building a standout academic profile for Ivy League and other top universities.",
       ctaText: "Book a Free Consultation",
       ctaHref: "#contact",
       secondaryText: "Explore the Program",
       secondaryHref: "#course",
     },
     highlights: [
-      { icon: "🌏", title: "Local Fair Alignment", desc: "Tailored to the rules and submission specs of the science fair in your region (Taiwan, USA, China, and more)." },
+      { icon: "🌏", title: "Local Fair Alignment", desc: "Tailored to the rules and submission specs of the science fair in your region (Asia-Pacific, USA, Europe, and more)." },
       { icon: "📝", title: "Full Paper Guidance", desc: "From topic selection and research to a complete paper (Chinese or English), guided every step of the way." },
       { icon: "🎤", title: "Presentation Training", desc: "Poster skills plus judge Q&A simulation, so your child is confident on stage." },
     ],
@@ -343,8 +343,8 @@ export const content = {
     ],
     faqTitle: "Frequently Asked Questions",
     faq: [
-      { q: "Online or in person?", a: "Fully online via Google Meet or Zoom — join from Taiwan, the USA, China, or anywhere." },
-      { q: "Which regions' fairs can you coach?", a: "Taiwan, the USA, China, and other regions — planned around each local fair's rules and judging criteria." },
+      { q: "Online or in person?", a: "Fully online via Google Meet or Zoom — join from Asia-Pacific, the USA, Europe, or anywhere." },
+      { q: "Which regions' fairs can you coach?", a: "Asia-Pacific, the USA, Europe, and other regions — planned around each local fair's rules and judging criteria." },
       { q: "What if my child's English isn't strong?", a: "That's fine. Papers are written in Chinese or English per the competition; classes and parent communication are in Chinese, and we guide your child through the writing step by step." },
       { q: "How long is the program?", a: "Designed as 16 weeks / 32 sessions, flexibly adjusted to the student's progress and the fair's deadline; extra sessions available." },
       { q: "What will my child produce?", a: "A complete research paper (8–12 pages, Chinese or English), a competition abstract, a physical/digital poster, and oral presentation & Q&A skills." },

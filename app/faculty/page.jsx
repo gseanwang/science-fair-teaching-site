@@ -1,20 +1,10 @@
 import { site } from "../../data/site";
+import Avatar from "../../components/Avatar";
 
 export const metadata = {
   title: "師資群 | 世界科展學院 World Science Academy",
   description: "認識帶孩子做研究的老師 —— 真正做過研究、也坐過評審桌的導師團隊。",
 };
-
-// 沒有照片時,用英文名字的縮寫做頭像(略過 Dr. 等稱謂)
-function initials(nameEn) {
-  return (nameEn || "")
-    .split(" ")
-    .filter((w) => w && !w.endsWith("."))
-    .map((w) => w[0])
-    .join("")
-    .slice(0, 2)
-    .toUpperCase();
-}
 
 export default function FacultyPage() {
   const f = site.faculty;
@@ -30,9 +20,7 @@ export default function FacultyPage() {
       {f.members.map((m, i) => (
         <section className="section faculty-member" key={i}>
           <div className="fm-head">
-            <div className="fm-avatar">
-              {m.photo ? <img src={m.photo} alt={m.name} /> : <span>{initials(m.nameEn)}</span>}
-            </div>
+            <Avatar photo={m.photo} nameEn={m.nameEn} name={m.name} />
             <div className="fm-head-text">
               <div className="fm-role">{m.role}</div>
               <h2 className="fm-name">

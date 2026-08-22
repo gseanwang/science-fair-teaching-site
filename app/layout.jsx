@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
 
         <footer className="site-footer">
           <div className="container">
-            <p>© {new Date().getFullYear()} {site.brand} · {site.brandEn}</p>
+            <p>© {new Date().getFullYear()} {site.brandEn} {site.brand} · 創立於 2026 Est. 2026</p>
           </div>
         </footer>
       </body>

@@ -109,6 +109,7 @@ export default async function HomePage({ params }) {
               <div className="price-total-line">
                 {p.total} {p.totalUnit} {c.pricingTotalTip}
               </div>
+              {p.altPrice && <div className="price-alt">{p.altPrice}</div>}
               {p.save && <div className="price-save">{p.save}</div>}
               <ul className="check-list">
                 {p.features.map((f, j) => <li key={j}>{f}</li>)}

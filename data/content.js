@@ -81,11 +81,11 @@ export const content = {
     pricingPerUnit: "/ 堂",
     pricingTotalTip: "· 共 32 堂",
     pricingCta: "预约免费咨询",
-    pricingNote: "每堂课仅需 $56 ~ $94,含每堂课后个人化修改反馈与发表前完整总润稿。",
+    pricingNote: "以美金 US$ 计价;人民币按 US$1≈¥7.2 参考换算,以实际汇率为准。每堂课仅需 US$56 ~ US$94,含每堂课后个人化修改反馈与发表前完整总润稿。",
     pricing: [
-      { name: "1人专班", en: "1-on-1", perClass: "$93.75", total: "$3,000", totalUnit: "全程", save: "", highlight: false, features: ["完全客制化研究方向", "老师 100% 专注一位学生", "进度最有弹性"] },
-      { name: "2人共学班", en: "1-on-2", perClass: "$62.50", total: "$2,000", totalUnit: "/ 人", save: "每人省 $1,000", highlight: true, features: ["与同伴互相讨论激荡", "兼顾个别指导与同侪学习", "性价比高"] },
-      { name: "3人精英班", en: "1-on-3", perClass: "$56.25", total: "$1,800", totalUnit: "/ 人", save: "每人省 $1,200", highlight: false, features: ["小组共学氛围", "最超值的价格", "适合同校/同好一起报名"] },
+      { name: "1人专班", en: "1-on-1", perClass: "$93.75", total: "$3,000", totalUnit: "全程", altPrice: "≈ ¥21,600 全程", save: "", highlight: false, features: ["完全客制化研究方向", "老师 100% 专注一位学生", "进度最有弹性"] },
+      { name: "2人共学班", en: "1-on-2", perClass: "$62.50", total: "$2,000", totalUnit: "/ 人", altPrice: "≈ ¥14,400 / 人", save: "每人省 $1,000", highlight: true, features: ["与同伴互相讨论激荡", "兼顾个别指导与同侪学习", "性价比高"] },
+      { name: "3人精英班", en: "1-on-3", perClass: "$56.25", total: "$1,800", totalUnit: "/ 人", altPrice: "≈ ¥12,960 / 人", save: "每人省 $1,200", highlight: false, features: ["小组共学氛围", "最超值的价格", "适合同校/同好一起报名"] },
     ],
     slidesSection: {
       title: "实际上课内容",
@@ -217,7 +217,7 @@ export const content = {
     pricingPerUnit: "/ 堂",
     pricingTotalTip: "· 共 32 堂",
     pricingCta: "預約免費諮詢",
-    pricingNote: "每堂課僅需 $56 ~ $94,含每堂課後個人化修改反饋與發表前完整總潤稿。",
+    pricingNote: "以美金 US$ 計價。每堂課僅需 US$56 ~ US$94,含每堂課後個人化修改反饋與發表前完整總潤稿。",
     pricing: [
       { name: "1人專班", en: "1-on-1", perClass: "$93.75", total: "$3,000", totalUnit: "全程", save: "", highlight: false, features: ["完全客製化研究方向", "老師 100% 專注一位學生", "進度最有彈性"] },
       { name: "2人共學班", en: "1-on-2", perClass: "$62.50", total: "$2,000", totalUnit: "/ 人", save: "每人省 $1,000", highlight: true, features: ["與同伴互相討論激盪", "兼顧個別指導與同儕學習", "性價比高"] },
@@ -353,7 +353,7 @@ export const content = {
     pricingPerUnit: "/ session",
     pricingTotalTip: "· 32 sessions",
     pricingCta: "Book a Free Consultation",
-    pricingNote: "Just $56–$94 per session — including personalized feedback after every class and a full final review before the presentation.",
+    pricingNote: "All prices in US$. Just US$56–US$94 per session — including personalized feedback after every class and a full final review before the presentation.",
     pricing: [
       { name: "1-on-1", en: "Private", perClass: "$93.75", total: "$3,000", totalUnit: "total", save: "", highlight: false, features: ["Fully customized research direction", "100% instructor focus on one student", "Most flexible pacing"] },
       { name: "1-on-2", en: "Pair", perClass: "$62.50", total: "$2,000", totalUnit: "/ person", save: "Save $1,000 each", highlight: true, features: ["Bounce ideas off a peer", "Individual guidance + peer learning", "Great value"] },
@@ -399,7 +399,7 @@ export const content = {
           tagline: "Bringing rigorous research methods to any topic — from AI and sustainability to biomedicine — guiding students to award-winning work.",
           photo: SEAN_PHOTO,
           groups: [
-            { title: "I've Sat at the Judging Table", star: true, points: ["Regional judge, JSHS high-school science competition", "Peer reviewer for international journals", "Chapter reviewer for academic books"], footer: "I know what judges look for" },
+            { title: "Judge & Reviewer Experience", star: true, points: ["Regional judge, JSHS high-school science competition", "Peer reviewer for international journals", "Chapter reviewer for academic books"], footer: "I know what judges look for" },
             { title: "Research Strength", points: ["First-author international journal publications", "Data modeling in Python / R", "AI / machine-learning applications"] },
             { title: "Teaching Experience", points: ["Mentored 7+ young researchers", "Instructor at K-12 teacher workshops", "Bilingual (Chinese/English) teaching", "Years of 1-on-1 / small-group coaching"] },
           ],

@@ -130,7 +130,7 @@ export const site = {
     subheading: "留下聯絡方式,我們會主動與您聯繫、說明適合的方案。",
     // ↓↓↓ 到 https://web3forms.com 用你的 Email 免費領一組 access key,貼在這裡。
     //     領到後,家長填的表單就會自動寄到你的信箱。留空則顯示「即將開通」。
-    accessKey: "",
+    accessKey: "12beea04-d204-49e8-8e55-7f9296eda546",
     successMessage: "收到您的諮詢!我們會盡快主動與您聯絡 🎉",
   },
 };

@@ -1,0 +1,143 @@
+/* ---------- 設計變數:改這裡就能換整站配色 ---------- */
+:root {
+  --bg: #f7f8fa;
+  --surface: #ffffff;
+  --text: #1a2233;
+  --muted: #5b6472;
+  --brand: #2f6df6;
+  --brand-soft: #e8f0fe;
+  --border: #e6e9ef;
+  --radius: 14px;
+  --shadow: 0 1px 3px rgba(20, 30, 50, 0.06), 0 8px 24px rgba(20, 30, 50, 0.05);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, "PingFang TC", "Microsoft JhengHei", "Segoe UI",
+    system-ui, sans-serif;
+  line-height: 1.65;
+}
+
+a { color: inherit; text-decoration: none; }
+
+.container {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ---------- Header / Footer ---------- */
+.site-header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+.logo { font-weight: 700; font-size: 1.15rem; }
+.nav a { margin-left: 20px; color: var(--muted); font-weight: 500; }
+.nav a:hover { color: var(--brand); }
+
+.site-footer {
+  margin-top: 64px;
+  padding: 28px 0;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* ---------- Hero ---------- */
+.hero { padding: 56px 0 32px; text-align: center; }
+.hero h1 { font-size: 2.4rem; margin: 0 0 12px; letter-spacing: -0.5px; }
+.hero p { font-size: 1.1rem; color: var(--muted); max-width: 620px; margin: 0 auto; }
+
+/* ---------- 分類篩選按鈕 ---------- */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 28px 0 32px;
+}
+.filter-btn {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--muted);
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.filter-btn:hover { border-color: var(--brand); color: var(--brand); }
+.filter-btn.active {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: #fff;
+}
+
+/* ---------- 卡片牆 ---------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px;
+  box-shadow: var(--shadow);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.card:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(20,30,50,0.1); }
+.card-tags { display: flex; gap: 8px; margin-bottom: 12px; }
+.tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--brand-soft);
+  color: var(--brand);
+}
+.tag.level { background: #f0f2f5; color: var(--muted); }
+.card h3 { margin: 0 0 8px; font-size: 1.15rem; }
+.card p { margin: 0 0 16px; color: var(--muted); font-size: 0.95rem; flex-grow: 1; }
+.card-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.card-link { color: var(--brand); font-weight: 600; }
+
+/* ---------- 單一課程頁 ---------- */
+.lesson { max-width: 720px; margin: 0 auto; padding: 40px 0; }
+.lesson .back { color: var(--muted); font-size: 0.9rem; }
+.lesson h1 { font-size: 2rem; margin: 16px 0 8px; }
+.lesson .meta { color: var(--muted); margin-bottom: 28px; }
+.lesson p { margin: 0 0 18px; font-size: 1.05rem; }
+
+.about { padding: 40px 0; max-width: 720px; margin: 0 auto; }
+.about h2 { font-size: 1.5rem; }
+
+@media (max-width: 600px) {
+  .hero h1 { font-size: 1.8rem; }
+}

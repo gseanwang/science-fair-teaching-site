@@ -271,6 +271,9 @@ h1, h2, h3, h4 { line-height: 1.3; }
 @media (max-width: 860px) {
   .two-col, .why-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
+  .fm-groups { grid-template-columns: 1fr; }
+  .fm-head { flex-direction: column; text-align: center; }
+  .fm-tagline { margin-left: auto; margin-right: auto; }
   .price-grid { grid-template-columns: 1fr; }
   .price-card.featured { transform: none; }
   .phase-row { grid-template-columns: 1fr 1fr; }

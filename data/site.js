@@ -17,8 +17,8 @@ export const site = {
       "We guide students through every step — from choosing a topic to standing confidently at their poster.",
     ctaText: "立即諮詢",
     ctaHref: "#contact",
-    secondaryText: "看課程方案",
-    secondaryHref: "#pricing",
+    secondaryText: "了解課程",
+    secondaryHref: "#course",
   },
 
   // ---------- 三大特色 ----------
@@ -97,23 +97,86 @@ export const site = {
     { title: "家長進度透明", desc: "定期更新學習進度,讓家長隨時掌握狀況。" },
   ],
 
-  // ---------- 實際上課簡報 ----------
-  slides: {
+  // ---------- 實際上課內容(多主題展示)----------
+  slidesSection: {
     title: "實際上課內容",
-    desc: "這是我們真實的授課簡報 —— 老師如何帶學生從概念、數據一步步做出判斷。歡迎家長翻閱,了解我們怎麼教。",
-    // 把簡報 PDF 放到 teaching-site/public/slides/ 底下,檔名對應這裡:
-    file: "/slides/sample-lesson.pdf",
-    // 準備好 PDF 後,把下面改成 true,網頁就會顯示簡報;false 則顯示「即將上線」。
-    ready: false,
-    // ready 為 false 時,先用文字列出簡報涵蓋的內容,讓家長知道教學深度:
-    topics: [
-      "主動學習策略(即時投票、Think-Pair-Share、案例辯論)",
-      "作物病害管理:單一抗病基因 vs. 多基因堆疊 vs. 品種混植",
-      "真實數據判讀:產量損失與成本的取捨分析",
-      "科學概念建立:抗病性、病原、天擇",
-      "歷史脈絡:西瓜萎凋病抗性的百年演變",
-    ],
+    desc: "點選不同主題,看看我們如何帶學生從概念、數據一步步做出判斷 —— 這些領域,我們都能教。",
   },
+  // 每一個主題就是一個 { } 區塊。要新增主題,複製一個貼在下面即可。
+  //   emoji / label:頁籤上顯示的圖示與名稱
+  //   tagline:這個主題一句話介紹
+  //   points:簡報涵蓋的重點(尚未放 PDF 時,先用文字讓家長知道教學深度)
+  //   file:簡報 PDF 路徑(放在 public/slides/ 底下)
+  //   ready:PDF 準備好後改成 true,就會顯示可翻閱的簡報
+  topics: [
+    {
+      id: "ai-recycling",
+      emoji: "♻️",
+      label: "AI 資源回收",
+      tagline: "以 AMP Robotics 智慧分選技術為例,看 AI 如何改變回收產業。",
+      points: [
+        "電腦視覺 + 機器學習 + 機械手臂如何自動分選回收物",
+        "勞動力、品質、效率三面向的產業衝擊分析",
+        "真實數據判讀:回收純度、成本與 ROI",
+        "從案例研究到完整英文研究論文",
+      ],
+      file: "/slides/ai-recycling.pdf",
+      ready: false,
+    },
+    {
+      id: "agri-food",
+      emoji: "🌾",
+      label: "農業與糧食",
+      tagline: "作物病害與育種:我們如何餵養一個更健康的糧食系統?",
+      points: [
+        "作物病害管理:單一抗病基因 vs. 多基因堆疊 vs. 品種混植",
+        "真實數據判讀:產量損失與成本的取捨分析",
+        "科學概念建立:抗病性、病原、天擇",
+        "歷史脈絡:西瓜萎凋病抗性的百年演變",
+      ],
+      file: "/slides/agri-food.pdf",
+      ready: false,
+    },
+    {
+      id: "sustainability",
+      emoji: "🌍",
+      label: "環保永續與政策",
+      tagline: "從科學數據到公共政策,評估永續方案的取捨與影響。",
+      points: [
+        "碳排放、資源循環與永續指標的量化",
+        "政策工具與經濟誘因如何影響環境結果",
+        "案例辯論:短期成本 vs. 長期韌性",
+      ],
+      file: "/slides/sustainability.pdf",
+      ready: false,
+    },
+    {
+      id: "microbiology",
+      emoji: "🧫",
+      label: "微生物與生命科學",
+      tagline: "從肉眼看不見的世界,理解健康、疾病與生態。",
+      points: [
+        "微生物的分類、生長與實驗設計",
+        "病原機制與抗藥性的演化",
+        "顯微觀察與數據紀錄的科學方法",
+      ],
+      file: "/slides/microbiology.pdf",
+      ready: false,
+    },
+    {
+      id: "robotics-ai",
+      emoji: "🤖",
+      label: "機器人與 AI 應用",
+      tagline: "動手把想法變成會運作的系統,並用數據驗證成效。",
+      points: [
+        "感測、控制與自動化的基本原理",
+        "機器學習模型的訓練與評估",
+        "把工程專題轉化為可發表的研究",
+      ],
+      file: "/slides/robotics-ai.pdf",
+      ready: false,
+    },
+  ],
 
   // ---------- 常見問答 ----------
   faq: [

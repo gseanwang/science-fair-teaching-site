@@ -66,6 +66,10 @@ h1, h2, h3, h4 { line-height: 1.3; }
 .nav a:hover { color: var(--brand); background: var(--brand-soft); }
 .nav .nav-cta { background: var(--brand); color: #fff; }
 .nav .nav-cta:hover { background: var(--brand-dark); color: #fff; }
+.lang-switch { display: inline-flex; margin-left: 8px; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.lang-opt { padding: 5px 9px; font-size: 0.82rem; font-weight: 600; color: var(--muted); }
+.lang-opt:hover { background: var(--brand-soft); color: var(--brand); }
+.lang-opt.active { background: var(--brand); color: #fff; }
 
 /* ---------- Section shell ---------- */
 .hero, .section { max-width: 1120px; margin: 0 auto; padding: 64px 20px; }

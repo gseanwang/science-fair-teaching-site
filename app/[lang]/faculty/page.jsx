@@ -1,18 +1,28 @@
-import { site } from "../../data/site";
-import Avatar from "../../components/Avatar";
+import { content, locales } from "../../../data/content";
+import { notFound } from "next/navigation";
+import Avatar from "../../../components/Avatar";
 
-export const metadata = {
-  title: "師資群 | 世界科展學院 World Science Academy",
-  description: "認識帶孩子做研究的老師 —— 真正做過研究、也坐過評審桌的導師團隊。",
-};
+export function generateStaticParams() {
+  return locales.map((l) => ({ lang: l.code }));
+}
 
-export default function FacultyPage() {
-  const f = site.faculty;
+export async function generateMetadata({ params }) {
+  const { lang } = await params;
+  const c = content[lang];
+  if (!c) return {};
+  return { title: `${c.faculty.title} | ${c.brandEn}` };
+}
+
+export default async function FacultyPage({ params }) {
+  const { lang } = await params;
+  const c = content[lang];
+  if (!c) notFound();
+  const f = c.faculty;
 
   return (
     <>
       <section className="hero" style={{ paddingBottom: 20 }}>
-        <span className="hero-badge">ABOUT US · 你的導師</span>
+        <span className="hero-badge">{f.aboutLabel}</span>
         <h1>{f.title}</h1>
         <p className="hero-sub">{f.desc}</p>
       </section>
@@ -33,11 +43,9 @@ export default function FacultyPage() {
 
           {m.awards && m.awards.length > 0 && (
             <div className="fm-awards">
-              <span className="fm-awards-label">🏅 榮譽</span>
+              <span className="fm-awards-label">{f.awardsLabel}</span>
               {m.awards.map((a, j) => (
-                <span className="fm-award" key={j}>
-                  {a}
-                </span>
+                <span className="fm-award" key={j}>{a}</span>
               ))}
             </div>
           )}
@@ -49,9 +57,7 @@ export default function FacultyPage() {
                   {g.title} {g.star && <span className="fm-star">★</span>}
                 </h3>
                 <ul>
-                  {g.points.map((p, k) => (
-                    <li key={k}>{p}</li>
-                  ))}
+                  {g.points.map((p, k) => <li key={k}>{p}</li>)}
                 </ul>
                 {g.footer && <div className="fm-group-footer">→ {g.footer}</div>}
               </div>
@@ -61,10 +67,10 @@ export default function FacultyPage() {
       ))}
 
       <section className="cta-band">
-        <h2>想讓孩子跟著這樣的導師做研究?</h2>
-        <p>留下聯絡方式,我們會主動與您聯繫。</p>
-        <a className="btn btn-lg" href="/#contact" style={{ background: "#fff", color: "var(--brand-dark)" }}>
-          前往諮詢 →
+        <h2>{f.backToContact}</h2>
+        <p>{f.backSub}</p>
+        <a className="btn btn-lg" href={`/${lang}#contact`} style={{ background: "#fff", color: "var(--brand-dark)" }}>
+          {f.backCta}
         </a>
       </section>
     </>

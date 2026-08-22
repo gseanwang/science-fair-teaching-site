@@ -136,12 +136,6 @@ h1, h2, h3, h4 { line-height: 1.3; }
 .btn-hero-ghost { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.5); color: #fff; }
 .btn-hero-ghost:hover { background: rgba(255,255,255,0.16); border-color: #fff; color: #fff; }
 
-/* Faculty page photo header band */
-.hero-faculty { background-image: url('/faculty/faculty-hero.jpg'); background-position: center 30%; background-size: cover; }
-.hero-faculty .hero-content { padding: 66px 20px 58px; }
-.hero-faculty .hero-title-en { font-size: 2.6rem; }
-@media (min-width: 700px) { .hero-faculty .hero-title-en { white-space: normal; } }
-
 /* ---------- 三大特色 ---------- */
 .highlight-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 22px; }
 .highlight-card {

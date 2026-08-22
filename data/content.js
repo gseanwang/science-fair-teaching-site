@@ -83,9 +83,9 @@ export const content = {
     pricingCta: "预约免费咨询",
     pricingNote: "以美金 US$ 计价;人民币按 US$1≈¥7.2 参考换算,以实际汇率为准。每堂课仅需 US$56 ~ US$94,含每堂课后个人化修改反馈与发表前完整总润稿。",
     pricing: [
-      { name: "1人专班", en: "1-on-1", perClass: "$93.75", total: "$3,000", totalUnit: "全程", altPrice: "≈ ¥21,600 全程", save: "", highlight: false, features: ["完全客制化研究方向", "老师 100% 专注一位学生", "进度最有弹性"] },
-      { name: "2人共学班", en: "1-on-2", perClass: "$62.50", total: "$2,000", totalUnit: "/ 人", altPrice: "≈ ¥14,400 / 人", save: "每人省 $1,000", highlight: true, features: ["与同伴互相讨论激荡", "兼顾个别指导与同侪学习", "性价比高"] },
-      { name: "3人精英班", en: "1-on-3", perClass: "$56.25", total: "$1,800", totalUnit: "/ 人", altPrice: "≈ ¥12,960 / 人", save: "每人省 $1,200", highlight: false, features: ["小组共学氛围", "最超值的价格", "适合同校/同好一起报名"] },
+      { name: "1人专班", en: "1-on-1", perClass: "$93.75", perClassAlt: "≈ ¥675 / 堂", total: "$3,000", totalUnit: "全程", altPrice: "≈ ¥21,600 全程", save: "", highlight: false, features: ["完全客制化研究方向", "老师 100% 专注一位学生", "进度最有弹性"] },
+      { name: "2人共学班", en: "1-on-2", perClass: "$62.50", perClassAlt: "≈ ¥450 / 堂", total: "$2,000", totalUnit: "/ 人", altPrice: "≈ ¥14,400 / 人", save: "每人省 $1,000", highlight: true, features: ["与同伴互相讨论激荡", "兼顾个别指导与同侪学习", "性价比高"] },
+      { name: "3人精英班", en: "1-on-3", perClass: "$56.25", perClassAlt: "≈ ¥405 / 堂", total: "$1,800", totalUnit: "/ 人", altPrice: "≈ ¥12,960 / 人", save: "每人省 $1,200", highlight: false, features: ["小组共学氛围", "最超值的价格", "适合同校/同好一起报名"] },
     ],
     slidesSection: {
       title: "实际上课内容",

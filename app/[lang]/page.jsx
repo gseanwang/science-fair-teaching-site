@@ -106,6 +106,7 @@ export default async function HomePage({ params }) {
               <div className="price-perclass-big">
                 {p.perClass}<span className="price-per-unit">{c.pricingPerUnit}</span>
               </div>
+              {p.perClassAlt && <div className="price-perclass-alt">{p.perClassAlt}</div>}
               <div className="price-total-line">
                 {p.total} {p.totalUnit} {c.pricingTotalTip}
               </div>

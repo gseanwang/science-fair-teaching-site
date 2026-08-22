@@ -1,6 +1,7 @@
 import { site } from "../data/site";
 import Faq from "../components/Faq";
 import Slides from "../components/Slides";
+import ContactForm from "../components/ContactForm";
 
 export default function HomePage() {
   return (
@@ -78,32 +79,6 @@ export default function HomePage() {
       {/* ===================== 實際上課簡報 ===================== */}
       <Slides />
 
-      {/* ===================== 費用方案 ===================== */}
-      <section className="section" id="pricing">
-        <h2 className="section-title">費用方案</h2>
-        <div className="price-grid">
-          {site.pricing.map((p, i) => (
-            <div className={"price-card" + (p.highlight ? " featured" : "")} key={i}>
-              {p.highlight && <div className="price-ribbon">最受歡迎</div>}
-              <h3>{p.name}</h3>
-              <div className="price-en">{p.en}</div>
-              <div className="price-amount">{p.price}</div>
-              <div className="price-unit">{p.unit}</div>
-              <div className="price-perclass">{p.perClass}</div>
-              <ul className="check-list">
-                {p.features.map((f, j) => (
-                  <li key={j}>{f}</li>
-                ))}
-              </ul>
-              <a className="btn btn-primary block" href="#contact">
-                我要報名這個方案
-              </a>
-            </div>
-          ))}
-        </div>
-        <p className="price-note">💡 {site.pricingNote}</p>
-      </section>
-
       {/* ===================== 為什麼選擇我們 ===================== */}
       <section className="section" id="why">
         <h2 className="section-title">為什麼選擇我們?</h2>
@@ -126,14 +101,12 @@ export default function HomePage() {
         <Faq />
       </section>
 
-      {/* ===================== 聯絡 / CTA ===================== */}
+      {/* ===================== 諮詢表單 ===================== */}
       <section className="cta-band" id="contact">
         <h2>{site.contact.heading}</h2>
         <p>{site.contact.subheading}</p>
-        <div className="contact-lines">
-          <div>📧 {site.contact.email}</div>
-          <div>📱 {site.contact.line}</div>
-          <div>☎️ {site.contact.phone}</div>
+        <div className="form-wrap">
+          <ContactForm />
         </div>
       </section>
     </>

@@ -184,8 +184,25 @@ h1, h2, h3, h4 { line-height: 1.3; }
   color: #fff; text-align: center; padding: 64px 20px; margin-top: 20px;
 }
 .cta-band h2 { font-size: 1.9rem; margin: 0 0 8px; }
-.cta-band p { opacity: 0.9; margin: 0 0 26px; }
-.contact-lines { display: flex; gap: 28px; justify-content: center; flex-wrap: wrap; font-size: 1.1rem; font-weight: 600; }
+.cta-band p { opacity: 0.92; margin: 0 0 26px; }
+
+/* ---------- 諮詢表單 ---------- */
+.form-wrap { max-width: 620px; margin: 0 auto; background: #fff; color: var(--text);
+  border-radius: var(--radius); padding: 30px; box-shadow: 0 20px 50px rgba(0,0,0,0.18); text-align: left; }
+.contact-form label { display: block; font-weight: 600; font-size: 0.92rem; margin-bottom: 14px; }
+.contact-form input, .contact-form textarea {
+  width: 100%; margin-top: 6px; padding: 11px 14px; font-size: 1rem; font-family: inherit;
+  border: 1.5px solid var(--border); border-radius: 10px; background: #fafbfd; color: var(--text);
+}
+.contact-form input:focus, .contact-form textarea:focus { outline: none; border-color: var(--brand); background: #fff; }
+.contact-form textarea { resize: vertical; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.contact-form .btn.block { margin-top: 8px; }
+.form-success { max-width: 620px; margin: 0 auto; background: #fff; color: var(--accent);
+  border-radius: var(--radius); padding: 40px 30px; font-size: 1.2rem; font-weight: 700; box-shadow: 0 20px 50px rgba(0,0,0,0.18); }
+.form-placeholder { max-width: 620px; margin: 0 auto; background: rgba(255,255,255,0.15);
+  border: 1.5px dashed rgba(255,255,255,0.5); border-radius: var(--radius); padding: 30px; font-weight: 600; }
+.form-error { color: #ffd7d7; margin-top: 12px; text-align: center; font-weight: 600; }
 
 /* ---------- Footer ---------- */
 .site-footer { padding: 28px 0; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.9rem; text-align: center; }
@@ -193,6 +210,7 @@ h1, h2, h3, h4 { line-height: 1.3; }
 /* ---------- 手機版 RWD ---------- */
 @media (max-width: 860px) {
   .two-col, .why-grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
   .price-grid { grid-template-columns: 1fr; }
   .price-card.featured { transform: none; }
   .phase-row { grid-template-columns: 1fr 1fr; }

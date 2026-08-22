@@ -17,7 +17,6 @@ export default function RootLayout({ children }) {
             <nav className="nav">
               <a href="#course">課程</a>
               <a href="#slides">上課內容</a>
-              <a href="#pricing">費用</a>
               <a href="#faq">問答</a>
               <a href="#contact" className="nav-cta">諮詢</a>
             </nav>

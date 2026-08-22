@@ -2,9 +2,9 @@ import "./globals.css";
 import { site } from "../data/site";
 
 export const metadata = {
-  title: "美國科展研究輔導課程 | 從選題到發表全程陪跑",
+  title: "世界科展學院 World Science Academy｜讓孩子站上世界的舞台",
   description:
-    "針對美國各州科展比賽,為孩子量身規劃 16 週完整研究輔導 —— 論文、海報、口頭發表一次到位。全程線上、中文溝通。",
+    "對接台灣、美國、中國等世界各地科展賽事,為孩子量身規劃 16 週完整研究輔導 —— 論文、海報、口頭發表一次到位。全程線上、中文溝通。",
 };
 
 export default function RootLayout({ children }) {

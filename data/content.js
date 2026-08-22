@@ -96,7 +96,7 @@ export const content = {
       downloadLabel: "下载 PDF",
     },
     topics: [
-      { id: "ai-recycling", emoji: "♻️", label: "AI 资源回收", tagline: "以 AMP Robotics 智能分选技术为例,看 AI 如何改变回收产业。", points: ["计算机视觉 + 机器学习 + 机械手臂如何自动分选回收物", "劳动力、质量、效率三面向的产业冲击分析", "真实数据判读:回收纯度、成本与 ROI", "从案例研究到完整英文研究论文"], file: "/slides/ai-recycling.pdf", ready: false },
+      { id: "ai-recycling", emoji: "♻️", label: "AI 资源回收", tagline: "以 AMP Robotics 智能分选技术为例,看 AI 如何改变回收产业。", points: ["计算机视觉 + 机器学习 + 机械手臂如何自动分选回收物", "劳动力、质量、效率三面向的产业冲击分析", "真实数据判读:回收纯度、成本与 ROI", "从案例研究到完整英文研究论文"], file: "/slides/ai-recycling.pdf", ready: true },
       { id: "agri-food", emoji: "🌾", label: "农业与粮食", tagline: "作物病害与育种:我们如何喂养一个更健康的粮食系统?", points: ["作物病害管理:单一抗病基因 vs. 多基因堆叠 vs. 品种混植", "真实数据判读:产量损失与成本的取舍分析", "科学概念建立:抗病性、病原、天择", "历史脉络:西瓜萎凋病抗性的百年演变"], file: "/slides/agri-food.pdf", ready: false },
       { id: "sustainability", emoji: "🌍", label: "环保永续与政策", tagline: "从科学数据到公共政策,评估永续方案的取舍与影响。", points: ["碳排放、资源循环与永续指标的量化", "政策工具与经济诱因如何影响环境结果", "案例辩论:短期成本 vs. 长期韧性"], file: "/slides/sustainability.pdf", ready: false },
       { id: "microbiology", emoji: "🧫", label: "微生物与生命科学", tagline: "从肉眼看不见的世界,理解健康、疾病与生态。", points: ["微生物的分类、生长与实验设计", "病原机制与抗药性的演化", "显微观察与数据记录的科学方法"], file: "/slides/microbiology.pdf", ready: false },
@@ -232,7 +232,7 @@ export const content = {
       downloadLabel: "下載 PDF",
     },
     topics: [
-      { id: "ai-recycling", emoji: "♻️", label: "AI 資源回收", tagline: "以 AMP Robotics 智慧分選技術為例,看 AI 如何改變回收產業。", points: ["電腦視覺 + 機器學習 + 機械手臂如何自動分選回收物", "勞動力、品質、效率三面向的產業衝擊分析", "真實數據判讀:回收純度、成本與 ROI", "從案例研究到完整英文研究論文"], file: "/slides/ai-recycling.pdf", ready: false },
+      { id: "ai-recycling", emoji: "♻️", label: "AI 資源回收", tagline: "以 AMP Robotics 智慧分選技術為例,看 AI 如何改變回收產業。", points: ["電腦視覺 + 機器學習 + 機械手臂如何自動分選回收物", "勞動力、品質、效率三面向的產業衝擊分析", "真實數據判讀:回收純度、成本與 ROI", "從案例研究到完整英文研究論文"], file: "/slides/ai-recycling.pdf", ready: true },
       { id: "agri-food", emoji: "🌾", label: "農業與糧食", tagline: "作物病害與育種:我們如何餵養一個更健康的糧食系統?", points: ["作物病害管理:單一抗病基因 vs. 多基因堆疊 vs. 品種混植", "真實數據判讀:產量損失與成本的取捨分析", "科學概念建立:抗病性、病原、天擇", "歷史脈絡:西瓜萎凋病抗性的百年演變"], file: "/slides/agri-food.pdf", ready: false },
       { id: "sustainability", emoji: "🌍", label: "環保永續與政策", tagline: "從科學數據到公共政策,評估永續方案的取捨與影響。", points: ["碳排放、資源循環與永續指標的量化", "政策工具與經濟誘因如何影響環境結果", "案例辯論:短期成本 vs. 長期韌性"], file: "/slides/sustainability.pdf", ready: false },
       { id: "microbiology", emoji: "🧫", label: "微生物與生命科學", tagline: "從肉眼看不見的世界,理解健康、疾病與生態。", points: ["微生物的分類、生長與實驗設計", "病原機制與抗藥性的演化", "顯微觀察與數據紀錄的科學方法"], file: "/slides/microbiology.pdf", ready: false },
@@ -368,7 +368,7 @@ export const content = {
       downloadLabel: "Download PDF",
     },
     topics: [
-      { id: "ai-recycling", emoji: "♻️", label: "AI Recycling", tagline: "Using AMP Robotics' smart sortation as a case study of how AI transforms the recycling industry.", points: ["How computer vision + ML + robotic arms auto-sort recyclables", "Industry impact across labor, quality, and efficiency", "Reading real data: purity, cost, and ROI", "From case study to a full research paper"], file: "/slides/ai-recycling.pdf", ready: false },
+      { id: "ai-recycling", emoji: "♻️", label: "AI Recycling", tagline: "Using AMP Robotics' smart sortation as a case study of how AI transforms the recycling industry.", points: ["How computer vision + ML + robotic arms auto-sort recyclables", "Industry impact across labor, quality, and efficiency", "Reading real data: purity, cost, and ROI", "From case study to a full research paper"], file: "/slides/ai-recycling.pdf", ready: true },
       { id: "agri-food", emoji: "🌾", label: "Agriculture & Food", tagline: "Crop disease and breeding: how do we feed a healthier food system?", points: ["Disease management: single R-gene vs. stacked genes vs. varietal mixtures", "Reading real data: yield loss vs. cost tradeoffs", "Core concepts: resistance, pathogens, natural selection", "A century of Fusarium-wilt resistance in watermelon"], file: "/slides/agri-food.pdf", ready: false },
       { id: "sustainability", emoji: "🌍", label: "Sustainability & Policy", tagline: "From scientific data to public policy — weighing the tradeoffs of sustainability.", points: ["Quantifying emissions, circularity, and sustainability metrics", "How policy tools and incentives shape environmental outcomes", "Case debate: short-term cost vs. long-term resilience"], file: "/slides/sustainability.pdf", ready: false },
       { id: "microbiology", emoji: "🧫", label: "Microbiology & Life Science", tagline: "Understanding health, disease, and ecosystems from the invisible world.", points: ["Classifying and growing microbes; experimental design", "Pathogen mechanisms and the evolution of resistance", "Microscopy and rigorous data recording"], file: "/slides/microbiology.pdf", ready: false },

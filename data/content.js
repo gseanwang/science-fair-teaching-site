@@ -1,5 +1,5 @@
 // ============================================================
-//  三語內容:简体(cn,預設)、繁體(tw)、English(en)
+//  三語內容:English(en,預設)、繁體(tw)、简体(cn);順序 EN → 繁 → 简
 //  結構完全相同,改文字就找對應語言那一塊。
 //  三種語言共用的東西(表單 key、照片、簡報檔名)在每塊都一樣,
 //  要換的話三塊都要一起改。
@@ -10,18 +10,18 @@ const ACCESS_KEY = "12beea04-d204-49e8-8e55-7f9296eda546";
 const SEAN_PHOTO = "/faculty/sean-2.jpg";
 
 export const locales = [
-  { code: "cn", label: "简体", htmlLang: "zh-Hans" },
-  { code: "tw", label: "繁體", htmlLang: "zh-Hant" },
   { code: "en", label: "EN", htmlLang: "en" },
+  { code: "tw", label: "繁體", htmlLang: "zh-Hant" },
+  { code: "cn", label: "简体", htmlLang: "zh-Hans" },
 ];
-export const defaultLocale = "cn";
+export const defaultLocale = "en";
 
 export const content = {
-  // ========================= 简体(主) =========================
+  // ========================= 简体 =========================
   cn: {
     brand: "世界科展学院",
     brandEn: "World Science Academy",
-    nav: { program: "课程", lessons: "上课内容", faculty: "师资", faq: "问答", contact: "咨询" },
+    nav: { program: "课程", lessons: "上课内容", faculty: "师资", pricing: "费用", faq: "问答", contact: "咨询" },
     footerNote: "创立于 2026 · Est. 2026",
 
     hero: {
@@ -75,6 +75,17 @@ export const content = {
       { title: "全程中文沟通", desc: "学生中/英文写作、家长中文沟通,零障碍配合。" },
       { title: "灵活排课", desc: "配合家庭行程弹性安排上课时间。" },
       { title: "家长进度透明", desc: "定期更新学习进度,让家长随时掌握状况。" },
+    ],
+    pricingTitle: "费用方案",
+    pricingPopular: "最受欢迎",
+    pricingPerUnit: "/ 堂",
+    pricingTotalTip: "· 共 32 堂",
+    pricingCta: "预约免费咨询",
+    pricingNote: "每堂课仅需 $56 ~ $94,含每堂课后个人化修改反馈与发表前完整总润稿。",
+    pricing: [
+      { name: "1人专班", en: "1-on-1", perClass: "$93.75", total: "$3,000", totalUnit: "全程", save: "", highlight: false, features: ["完全客制化研究方向", "老师 100% 专注一位学生", "进度最有弹性"] },
+      { name: "2人共学班", en: "1-on-2", perClass: "$62.50", total: "$2,000", totalUnit: "/ 人", save: "每人省 $1,000", highlight: true, features: ["与同伴互相讨论激荡", "兼顾个别指导与同侪学习", "性价比高"] },
+      { name: "3人精英班", en: "1-on-3", perClass: "$56.25", total: "$1,800", totalUnit: "/ 人", save: "每人省 $1,200", highlight: false, features: ["小组共学氛围", "最超值的价格", "适合同校/同好一起报名"] },
     ],
     slidesSection: {
       title: "实际上课内容",
@@ -146,7 +157,7 @@ export const content = {
   tw: {
     brand: "世界科展學院",
     brandEn: "World Science Academy",
-    nav: { program: "課程", lessons: "上課內容", faculty: "師資群", faq: "問答", contact: "諮詢" },
+    nav: { program: "課程", lessons: "上課內容", faculty: "師資群", pricing: "費用", faq: "問答", contact: "諮詢" },
     footerNote: "創立於 2026 · Est. 2026",
 
     hero: {
@@ -200,6 +211,17 @@ export const content = {
       { title: "全程中文溝通", desc: "學生中/英文寫作、家長中文溝通,零障礙配合。" },
       { title: "靈活排課", desc: "配合家庭行程彈性安排上課時間。" },
       { title: "家長進度透明", desc: "定期更新學習進度,讓家長隨時掌握狀況。" },
+    ],
+    pricingTitle: "費用方案",
+    pricingPopular: "最受歡迎",
+    pricingPerUnit: "/ 堂",
+    pricingTotalTip: "· 共 32 堂",
+    pricingCta: "預約免費諮詢",
+    pricingNote: "每堂課僅需 $56 ~ $94,含每堂課後個人化修改反饋與發表前完整總潤稿。",
+    pricing: [
+      { name: "1人專班", en: "1-on-1", perClass: "$93.75", total: "$3,000", totalUnit: "全程", save: "", highlight: false, features: ["完全客製化研究方向", "老師 100% 專注一位學生", "進度最有彈性"] },
+      { name: "2人共學班", en: "1-on-2", perClass: "$62.50", total: "$2,000", totalUnit: "/ 人", save: "每人省 $1,000", highlight: true, features: ["與同伴互相討論激盪", "兼顧個別指導與同儕學習", "性價比高"] },
+      { name: "3人精英班", en: "1-on-3", perClass: "$56.25", total: "$1,800", totalUnit: "/ 人", save: "每人省 $1,200", highlight: false, features: ["小組共學氣氛", "最超值的價格", "適合同校/同好一起報名"] },
     ],
     slidesSection: {
       title: "實際上課內容",
@@ -271,7 +293,7 @@ export const content = {
   en: {
     brand: "World Science Academy",
     brandEn: "World Science Academy",
-    nav: { program: "Program", lessons: "Lessons", faculty: "Faculty", faq: "FAQ", contact: "Contact" },
+    nav: { program: "Program", lessons: "Lessons", faculty: "Faculty", pricing: "Pricing", faq: "FAQ", contact: "Contact" },
     footerNote: "Est. 2026",
 
     hero: {
@@ -325,6 +347,17 @@ export const content = {
       { title: "Chinese-Friendly Communication", desc: "Students write in Chinese/English; parents communicate in Chinese — zero barriers." },
       { title: "Flexible Scheduling", desc: "Class times arranged around your family's schedule." },
       { title: "Transparent Progress", desc: "Regular progress updates keep parents informed." },
+    ],
+    pricingTitle: "Tuition Plans",
+    pricingPopular: "Most Popular",
+    pricingPerUnit: "/ session",
+    pricingTotalTip: "· 32 sessions",
+    pricingCta: "Book a Free Consultation",
+    pricingNote: "Just $56–$94 per session — including personalized feedback after every class and a full final review before the presentation.",
+    pricing: [
+      { name: "1-on-1", en: "Private", perClass: "$93.75", total: "$3,000", totalUnit: "total", save: "", highlight: false, features: ["Fully customized research direction", "100% instructor focus on one student", "Most flexible pacing"] },
+      { name: "1-on-2", en: "Pair", perClass: "$62.50", total: "$2,000", totalUnit: "/ person", save: "Save $1,000 each", highlight: true, features: ["Bounce ideas off a peer", "Individual guidance + peer learning", "Great value"] },
+      { name: "1-on-3", en: "Trio", perClass: "$56.25", total: "$1,800", totalUnit: "/ person", save: "Save $1,200 each", highlight: false, features: ["Small-group energy", "Best value", "Ideal for classmates or friends together"] },
     ],
     slidesSection: {
       title: "Inside Our Lessons",

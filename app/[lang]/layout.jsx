@@ -31,6 +31,7 @@ export default async function LangLayout({ children, params }) {
             <a href={`/${lang}#course`}>{c.nav.program}</a>
             <a href={`/${lang}#slides`}>{c.nav.lessons}</a>
             <a href={`/${lang}/faculty`}>{c.nav.faculty}</a>
+            <a href={`/${lang}#pricing`}>{c.nav.pricing}</a>
             <a href={`/${lang}#faq`}>{c.nav.faq}</a>
             <a href={`/${lang}#contact`} className="nav-cta">{c.nav.contact}</a>
             <span className="lang-switch">

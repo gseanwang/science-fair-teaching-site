@@ -94,6 +94,32 @@ export default async function HomePage({ params }) {
         </div>
       </section>
 
+      {/* ===================== 費用方案 ===================== */}
+      <section className="section" id="pricing">
+        <h2 className="section-title">{c.pricingTitle}</h2>
+        <div className="price-grid">
+          {c.pricing.map((p, i) => (
+            <div className={"price-card" + (p.highlight ? " featured" : "")} key={i}>
+              {p.highlight && <div className="price-ribbon">{c.pricingPopular}</div>}
+              <h3>{p.name}</h3>
+              <div className="price-en">{p.en}</div>
+              <div className="price-perclass-big">
+                {p.perClass}<span className="price-per-unit">{c.pricingPerUnit}</span>
+              </div>
+              <div className="price-total-line">
+                {p.total} {p.totalUnit} {c.pricingTotalTip}
+              </div>
+              {p.save && <div className="price-save">{p.save}</div>}
+              <ul className="check-list">
+                {p.features.map((f, j) => <li key={j}>{f}</li>)}
+              </ul>
+              <a className="btn btn-primary block" href={`/${lang}#contact`}>{c.pricingCta}</a>
+            </div>
+          ))}
+        </div>
+        <p className="price-note">💡 {c.pricingNote}</p>
+      </section>
+
       {/* ===================== 常見問答 ===================== */}
       <section className="section" id="faq">
         <h2 className="section-title">{c.faqTitle}</h2>

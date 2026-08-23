@@ -135,6 +135,32 @@ h1, h2, h3, h4 { line-height: 1.3; }
 .hero-photo .hero-cta { justify-content: flex-start; }
 .btn-hero-ghost { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.5); color: #fff; }
 .btn-hero-ghost:hover { background: rgba(255,255,255,0.16); border-color: #fff; color: #fff; }
+.hero-ai-line { color: #B9C6DC; font-size: 0.98rem; font-weight: 500; margin: 20px 0 0; }
+
+/* Hero load animation */
+.hero-photo .hero-content { animation: heroUp 0.8s cubic-bezier(0.2,0.7,0.2,1) both; }
+@keyframes heroUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+
+/* Scroll reveal (added by ScrollReveal.jsx) */
+.reveal-init { opacity: 0; transform: translateY(20px); }
+.reveal-init.reveal-in { opacity: 1; transform: none; transition: opacity 0.6s ease, transform 0.6s ease; }
+@media (prefers-reduced-motion: reduce) {
+  .hero-photo .hero-content { animation: none; }
+  .reveal-init, .reveal-init.reveal-in { opacity: 1 !important; transform: none !important; transition: none; }
+}
+
+/* "Using AI" highlight card — animated gradient glow (AI feel) */
+.highlight-grid .highlight-card:nth-child(4) {
+  border: 2px solid transparent;
+  background:
+    linear-gradient(var(--surface), var(--surface)) padding-box,
+    linear-gradient(120deg, #2F6DF6, #8B5CF6, #0EA36B, #2F6DF6) border-box;
+  background-size: auto, 300% 100%;
+  animation: aiGlow 5s linear infinite;
+}
+@keyframes aiGlow { from { background-position: 0 0, 0 50%; } to { background-position: 0 0, 300% 50%; } }
+.highlight-grid .highlight-card:nth-child(4) .highlight-icon { animation: floaty 3.2s ease-in-out infinite; }
+@keyframes floaty { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
 
 /* ---------- 三大特色 ---------- */
 .highlight-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 22px; }

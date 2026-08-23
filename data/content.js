@@ -30,6 +30,7 @@ export const content = {
       titleSub: "让孩子站上世界的舞台",
       subtitle:
         "世界科展学院 World Science Academy —— 为孩子量身规划完整研究辅导,对接亚洲、美洲、欧洲等世界各地的科展赛事,打造申请常春藤等世界名校的亮眼学术履历。",
+      aiLine: "🤖 教孩子正确、负责任地使用 AI —— 未来的关键能力",
       ctaText: "预约免费咨询",
       ctaHref: "#contact",
       secondaryText: "了解课程",
@@ -70,6 +71,7 @@ export const content = {
     whyUs: [
       { title: "升学履历加分", desc: "竞赛成果与研究论文,是申请常春藤等世界名校最有力的学术亮点。" },
       { title: "评审视角教学", desc: "导师曾任区域科展评审,清楚评审重视什么,直接教到得分关键。" },
+      { title: "AI 素养教学", desc: "用 AI 加速文献整理与构思,但研究思路与论文始终是孩子自己的 —— 学会正确、诚信地驾驭工具。" },
       { title: "深度客制化", desc: "针对您孩子所在地区的科展规则与评审标准量身设计。" },
       { title: "真实研究主题", desc: "研究当今业界真正部署的技术(如 AI、机器人、环保科技)。" },
       { title: "学术能力双提升", desc: "科学写作 × 口语表达,为高中大学研究打下基础。" },
@@ -167,6 +169,7 @@ export const content = {
       titleSub: "讓孩子站上世界的舞台",
       subtitle:
         "世界科展學院 World Science Academy —— 為孩子量身規劃完整研究輔導,對接亞洲、美洲、歐洲等世界各地的科展賽事,打造申請常春藤等世界名校的亮眼學術履歷。",
+      aiLine: "🤖 教孩子正確、負責任地使用 AI —— 未來的關鍵能力",
       ctaText: "預約免費諮詢",
       ctaHref: "#contact",
       secondaryText: "了解課程",
@@ -207,6 +210,7 @@ export const content = {
     whyUs: [
       { title: "升學履歷加分", desc: "競賽成果與研究論文,是申請常春藤等世界名校最有力的學術亮點。" },
       { title: "評審視角教學", desc: "導師曾任區域科展評審,清楚評審重視什麼,直接教到得分關鍵。" },
+      { title: "AI 素養教學", desc: "用 AI 加速文獻整理與構思,但研究思路與論文始終是孩子自己的 —— 學會正確、誠信地駕馭工具。" },
       { title: "深度客製化", desc: "針對您孩子所在地區的科展規則與評審標準量身設計。" },
       { title: "真實研究主題", desc: "研究當今業界真正部署的技術(如 AI、機器人、環保科技)。" },
       { title: "學術能力雙提升", desc: "科學寫作 × 口語表達,為高中大學研究打下基礎。" },
@@ -304,6 +308,7 @@ export const content = {
       titleSub: "",
       subtitle:
         "World Science Academy — personalized research mentorship for your child, aligned with science fairs across Asia, America, Europe, and beyond, building a standout academic profile for Ivy League and other top universities.",
+      aiLine: "🤖 Teaching students to use AI correctly and responsibly.",
       ctaText: "Book a Free Consultation",
       ctaHref: "#contact",
       secondaryText: "Explore the Program",
@@ -344,6 +349,7 @@ export const content = {
     whyUs: [
       { title: "College Profile Boost", desc: "Competition results and research papers are the strongest academic highlights for Ivy League and top-university applications." },
       { title: "A Judge's Perspective", desc: "Our mentor has served as a regional science-fair judge and teaches exactly what judges look for." },
+      { title: "AI Literacy", desc: "Use AI to speed up literature review and brainstorming — while the thinking and the paper stay the student's own. Mastery with integrity." },
       { title: "Deep Customization", desc: "Designed around the science-fair rules and judging criteria of your region." },
       { title: "Real-World Topics", desc: "Research technologies actually deployed today — AI, robotics, environmental tech." },
       { title: "Dual Skill Growth", desc: "Scientific writing × oral communication — a foundation for high-school and college research." },

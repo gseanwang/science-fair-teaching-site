@@ -27,6 +27,7 @@ export default async function HomePage({ params }) {
             <a className="btn btn-primary btn-lg" href={`/${lang}${c.hero.ctaHref}`}>{c.hero.ctaText}</a>
             <a className="btn btn-hero-ghost btn-lg" href={`/${lang}${c.hero.secondaryHref}`}>{c.hero.secondaryText}</a>
           </div>
+          {c.hero.aiLine && <p className="hero-ai-line">{c.hero.aiLine}</p>}
         </div>
       </section>
 

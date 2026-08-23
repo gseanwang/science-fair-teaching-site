@@ -1,6 +1,7 @@
 import { content, locales, defaultLocale } from "../../data/content";
 import { notFound } from "next/navigation";
 import SiteHeader from "../../components/SiteHeader";
+import ScrollReveal from "../../components/ScrollReveal";
 
 export function generateStaticParams() {
   return locales.map((l) => ({ lang: l.code }));
@@ -25,6 +26,7 @@ export default async function LangLayout({ children, params }) {
       <SiteHeader lang={lang} brand={c.brand} brandEn={c.brandEn} nav={c.nav} locales={locales} />
 
       <main>{children}</main>
+      <ScrollReveal />
 
       <footer className="site-footer">
         <div className="container">

@@ -8,6 +8,22 @@ export function generateStaticParams() {
   return locales.map((l) => ({ lang: l.code }));
 }
 
+// 乾淨的線條圖示(取代 emoji)
+const HL_ICONS = {
+  globe: (
+    <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#2F6DF6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9" /><path d="M3 12h18" /><path d="M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18" /></svg>
+  ),
+  paper: (
+    <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#2F6DF6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M6 2h8l4 4v16H6z" /><path d="M14 2v4h4" /><path d="M9 12h6" /><path d="M9 16h6" /></svg>
+  ),
+  present: (
+    <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#2F6DF6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 4h18" /><path d="M4 4v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4" /><path d="M8 11l2.5-2.5L13 11l3-3" /><path d="M12 15v4" /><path d="M9 21h6" /></svg>
+  ),
+  ai: (
+    <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#2F6DF6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 3l1.7 4.3L18 9l-4.3 1.7L12 15l-1.7-4.3L6 9l4.3-1.7L12 3Z" /><path d="M18.5 14l.9 2.1 2.1.9-2.1.9-.9 2.1-.9-2.1-2.1-.9 2.1-.9.9-2.1Z" /></svg>
+  ),
+};
+
 export default async function HomePage({ params }) {
   const { lang } = await params;
   const c = content[lang];
@@ -36,7 +52,7 @@ export default async function HomePage({ params }) {
         <div className="highlight-grid">
           {c.highlights.map((h, i) => (
             <div className="highlight-card" key={i}>
-              <div className="highlight-icon">{h.icon}</div>
+              <div className="highlight-icon">{HL_ICONS[h.icon]}</div>
               <h3>{h.title}</h3>
               <p>{h.desc}</p>
             </div>

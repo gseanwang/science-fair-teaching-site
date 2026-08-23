@@ -340,6 +340,9 @@ h1, h2, h3, h4 { line-height: 1.3; }
 .fm-awards-label { font-weight: 700; color: #a6791b; }
 .fm-award { background: #fff; border: 1px solid #f0e4c0; border-radius: 999px; padding: 5px 14px; font-size: 0.9rem; font-weight: 600; }
 
+.fm-degree { background: #F5F7FB; border-left: 3px solid var(--brand); border-radius: 0 12px 12px 0; padding: 18px 22px; margin-bottom: 26px; }
+.fm-degree-label { font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 0.82rem; letter-spacing: 1px; color: var(--brand-dark); margin-bottom: 6px; text-transform: uppercase; }
+.fm-degree p { margin: 0; color: var(--text); font-size: 0.98rem; line-height: 1.6; }
 .fm-groups { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .fm-group {
   background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);

@@ -48,6 +48,13 @@ export default async function FacultyPage({ params }) {
             </div>
           )}
 
+          {m.degreeNote && (
+            <div className="fm-degree">
+              <div className="fm-degree-label">{f.degreeLabel}</div>
+              <p>{m.degreeNote}</p>
+            </div>
+          )}
+
           <div className="fm-groups">
             {m.groups.map((g, j) => (
               <div className={"fm-group" + (g.star ? " star" : "")} key={j}>

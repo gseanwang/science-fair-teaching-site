@@ -123,11 +123,13 @@ export const content = {
       backCta: "前往咨询 →",
       aboutLabel: "ABOUT US · 你的导师",
       awardsLabel: "🏅 精选成就",
+      degreeLabel: "学术背景",
       members: [
         {
-          name: "Sean Wang 博士", nameEn: "Dr. Sean Wang", role: "创办人・首席讲师",
+          name: "Sean Wang 博士", nameEn: "Dr. Sean Wang", role: "创办人・科学研究导师",
           credential: "博士(Ph.D.)· 美国佛罗里达大学 University of Florida",
-          tagline: "把严谨的研究方法带到各种题目 —— 从 AI、环保到生医,引导学生把好奇心变成得奖作品。",
+          tagline: "以博士级的研究方法 —— 实验设计、数据分析、科学表达 —— 带学生在生命科学、环境与农业领域完成扎实的研究。",
+          degreeNote: "Wang 博士将植物病理学的博士训练 —— 实验设计、科学方法、数据分析、文献评估与科学表达 —— 应用于指导学生完成农业、植物、环境、微生物与生命科学领域的研究专题。",
           photo: SEAN_PHOTO,
           groups: [
             { title: "我也坐过评审桌", star: true, points: ["JSHS 美国高中科学竞赛 区域评审", "国际期刊论文 审稿人", "学会专书 章节审查委员"], footer: "我知道评审在看什么" },
@@ -262,11 +264,13 @@ export const content = {
       backCta: "前往諮詢 →",
       aboutLabel: "ABOUT US · 你的導師",
       awardsLabel: "🏅 精選成就",
+      degreeLabel: "學術背景",
       members: [
         {
-          name: "Sean Wang 博士", nameEn: "Dr. Sean Wang", role: "創辦人・首席講師",
+          name: "Sean Wang 博士", nameEn: "Dr. Sean Wang", role: "創辦人・科學研究導師",
           credential: "博士(Ph.D.)· 美國佛羅里達大學 University of Florida",
-          tagline: "把嚴謹的研究方法帶到各種題目 —— 從 AI、環保到生醫,引導學生把好奇心變成得獎作品。",
+          tagline: "以博士級的研究方法 —— 實驗設計、資料分析、科學表達 —— 帶學生在生命科學、環境與農業領域完成扎實的研究。",
+          degreeNote: "Wang 博士將植物病理學的博士訓練 —— 實驗設計、科學方法、資料分析、文獻評估與科學表達 —— 應用於指導學生完成農業、植物、環境、微生物與生命科學領域的研究專題。",
           photo: SEAN_PHOTO,
           groups: [
             { title: "我也坐過評審桌", star: true, points: ["JSHS 美國高中科學競賽 區域評審", "國際期刊論文 審稿人", "學會專書 章節審查委員"], footer: "我知道評審在看什麼" },
@@ -401,11 +405,13 @@ export const content = {
       backCta: "Get in touch →",
       aboutLabel: "ABOUT US · Your Mentor",
       awardsLabel: "🏅 Selected Achievements",
+      degreeLabel: "Academic Background",
       members: [
         {
-          name: "Dr. Sean Wang", nameEn: "Dr. Sean Wang", role: "Founder & Lead Instructor",
+          name: "Dr. Sean Wang", nameEn: "Dr. Sean Wang", role: "Founder & Scientific Research Mentor",
           credential: "Ph.D., University of Florida",
-          tagline: "Bringing rigorous research methods to any topic — from AI and sustainability to biomedicine — guiding students to award-winning work.",
+          tagline: "Bringing doctoral-level research methods — experimental design, data analysis, and scientific communication — to mentor students through rigorous projects across the life, environmental, and agricultural sciences.",
+          degreeNote: "Dr. Wang applies doctoral training in plant pathology — experimental design, scientific methodology, data analysis, literature evaluation, and scientific communication — to mentor students through research projects in the agricultural, plant, environmental, microbiological, and life sciences.",
           photo: SEAN_PHOTO,
           groups: [
             { title: "Judge & Reviewer Experience", star: true, points: ["Regional judge, JSHS high-school science competition", "Peer reviewer for international journals", "Chapter reviewer for academic books"], footer: "I know what makes research stand out" },

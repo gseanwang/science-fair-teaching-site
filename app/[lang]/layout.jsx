@@ -23,7 +23,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title,
       description,
-      url: `https://worldscienceacademy.org${path}`,
+      url: `https://www.worldscienceacademy.org${path}`,
       siteName: c.brandEn,
       locale: htmlLang || undefined,
       type: "website",

@@ -3,7 +3,7 @@ import { locales } from "../data/content";
 
 export const dynamic = "force-static";
 
-const SITE = "https://worldscienceacademy.org";
+const SITE = "https://www.worldscienceacademy.org";
 const PAGES = ["", "faculty", "competitions"]; // 首頁、師資、科展資訊
 
 export default function sitemap() {

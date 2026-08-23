@@ -11,8 +11,23 @@ export async function generateMetadata({ params }) {
   const { lang } = await params;
   const c = content[lang];
   if (!c) return {};
+  const title = `${c.brandEn}｜${c.hero.titleSub || c.hero.titleMain}`;
+  const description = c.hero.subtitle;
+  const path = `/${lang}/`;
+  const htmlLang = locales.find((l) => l.code === lang)?.htmlLang;
+  const languages = Object.fromEntries(locales.map((l) => [l.htmlLang, `/${l.code}/`]));
   return {
-    title: `${c.brandEn}｜${c.hero.titleSub || c.hero.titleMain}`,
+    title,
+    description,
+    alternates: { canonical: path, languages },
+    openGraph: {
+      title,
+      description,
+      url: `https://worldscienceacademy.org${path}`,
+      siteName: c.brandEn,
+      locale: htmlLang || undefined,
+      type: "website",
+    },
   };
 }
 

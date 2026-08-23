@@ -30,7 +30,7 @@ export const content = {
       titleSub: "让孩子站上世界的舞台",
       subtitle:
         "世界科展学院 World Science Academy —— 为孩子量身规划完整研究辅导,对接亚洲、美洲、欧洲等世界各地的科展赛事,打造申请常春藤等世界名校的亮眼学术履历。",
-      aiLine: "🤖 教孩子正确、负责任地使用 AI —— 未来的关键能力",
+      aiLine: "让孩子不只会用 AI,更懂得辨别真伪、负责任地与 AI 协作 —— 面向未来的关键能力",
       ctaText: "预约免费咨询",
       ctaHref: "#contact",
       secondaryText: "了解课程",
@@ -169,7 +169,7 @@ export const content = {
       titleSub: "讓孩子站上世界的舞台",
       subtitle:
         "世界科展學院 World Science Academy —— 為孩子量身規劃完整研究輔導,對接亞洲、美洲、歐洲等世界各地的科展賽事,打造申請常春藤等世界名校的亮眼學術履歷。",
-      aiLine: "🤖 教孩子正確、負責任地使用 AI —— 未來的關鍵能力",
+      aiLine: "讓孩子不只會用 AI,更懂得辨別真偽、負責任地與 AI 協作 —— 面向未來的關鍵能力",
       ctaText: "預約免費諮詢",
       ctaHref: "#contact",
       secondaryText: "了解課程",
@@ -308,7 +308,7 @@ export const content = {
       titleSub: "",
       subtitle:
         "World Science Academy — personalized research mentorship for your child, aligned with science fairs across Asia, America, Europe, and beyond, building a standout academic profile for Ivy League and other top universities.",
-      aiLine: "🤖 Teaching students to use AI correctly and responsibly.",
+      aiLine: "Not just using AI — students learn to tell fact from fiction and collaborate with it responsibly: the skill that defines the future.",
       ctaText: "Book a Free Consultation",
       ctaHref: "#contact",
       secondaryText: "Explore the Program",

@@ -42,8 +42,8 @@ export default async function CompetitionsPage({ params }) {
               {items.map((x) => (
                 <div className="comp-card" key={x.id}>
                   <div className="comp-head">
-                    <h3>{x.name}</h3>
-                    <span className="comp-grades">{u.who}:&nbsp;{x.grades}</span>
+                    <h3>{x.name[lang]}</h3>
+                    <span className="comp-grades">{u.who}:&nbsp;{x.grades[lang]}</span>
                   </div>
                   <p className="comp-blurb">{x.blurb[lang]}</p>
                   <div className="comp-when">

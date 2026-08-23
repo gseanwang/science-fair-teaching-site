@@ -21,10 +21,12 @@ export default async function FacultyPage({ params }) {
 
   return (
     <>
-      <section className="hero" style={{ paddingBottom: 20 }}>
-        <span className="hero-badge">{f.aboutLabel}</span>
-        <h1>{f.title}</h1>
-        <p className="hero-sub">{f.desc}</p>
+      <section className="page-hero">
+        <div className="page-hero-inner">
+          <span className="hero-badge">{f.aboutLabel}</span>
+          <h1>{f.title}</h1>
+          <p className="hero-sub">{f.desc}</p>
+        </div>
       </section>
 
       {f.members.map((m, i) => (

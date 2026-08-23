@@ -147,7 +147,7 @@ export const content = {
           groups: [
             { title: "代表作品", star: true, points: ["AI 智能排程系统(影音团队资源调度)", "Meta Quest 3 VR 培训模拟", "Roo UI/UX 行动 App(使用者研究)"], footer: "本课程「AI 智能排程」主题由 Emily 授课" },
             { title: "AI 与技术能力", points: ["NVIDIA 深度学习 / Transformer NLP 认证", "Figma、Unity、前端开发", "Google AI Studio 快速原型"] },
-            { title: "业界设计经历", points: ["Interactive Designer @ COOL CREATIVE(台北)", "东森电视 EBC 专案开发经理", "微风广场精品视觉设计(YSL、MM6 等)"] },
+            { title: "业界设计经历", points: ["互动设计师:产品与使用者体验设计", "使用者研究与可用性测试", "跨领域专案管理与执行"] },
           ],
           awards: ["NVIDIA 深度学习・Transformer NLP 认证", "美国佛罗里达大学 数字艺术与科学硕士"],
         },
@@ -301,7 +301,7 @@ export const content = {
           groups: [
             { title: "代表作品", star: true, points: ["AI 智慧排程系統(影音團隊資源調度)", "Meta Quest 3 VR 培訓模擬", "Roo UI/UX 行動 App(使用者研究)"], footer: "本課程「AI 智慧排程」主題由 Emily 授課" },
             { title: "AI 與技術能力", points: ["NVIDIA 深度學習 / Transformer NLP 認證", "Figma、Unity、前端開發", "Google AI Studio 快速原型"] },
-            { title: "業界設計經歷", points: ["Interactive Designer @ COOL CREATIVE(台北)", "東森電視 EBC 專案開發經理", "微風廣場精品視覺設計(YSL、MM6 等)"] },
+            { title: "業界設計經歷", points: ["互動設計師:產品與使用者體驗設計", "使用者研究與可用性測試", "跨領域專案管理與執行"] },
           ],
           awards: ["NVIDIA 深度學習・Transformer NLP 認證", "美國佛羅里達大學 數位藝術與科學碩士"],
         },
@@ -455,7 +455,7 @@ export const content = {
           groups: [
             { title: "Signature Work", star: true, points: ["AI Smart Scheduling System (video-team resourcing)", "Meta Quest 3 VR training simulation", "Roo — UI/UX mobile app (user research)"], footer: "Emily leads the AI Smart Scheduling topic in this program" },
             { title: "AI & Technical Skills", points: ["NVIDIA Deep Learning / Transformer NLP certifications", "Figma, Unity, front-end development", "Rapid prototyping with Google AI Studio"] },
-            { title: "Industry Design Experience", points: ["Interactive Designer @ COOL CREATIVE (Taipei)", "Project Development Manager, EBC (broadcasting)", "Visual design for luxury brands (YSL, MM6)"] },
+            { title: "Industry Design Experience", points: ["Interactive designer — product & UX design", "User research & usability testing", "Cross-functional project management"] },
           ],
           awards: ["NVIDIA Deep Learning & Transformer NLP certifications", "M.S. Digital Arts & Sciences, University of Florida"],
         },

@@ -103,7 +103,7 @@ export const content = {
       { id: "agri-food", emoji: "🌾", label: "农业与粮食", tagline: "作物病害与育种:我们如何喂养一个更健康的粮食系统?", points: ["作物病害管理:单一抗病基因 vs. 多基因堆叠 vs. 品种混植", "真实数据判读:产量损失与成本的取舍分析", "科学概念建立:抗病性、病原、天择", "案例研究:马铃薯晚疫病与爱尔兰大饥荒的启示"], file: "/slides/agri-food.pdf", ready: true },
       { id: "sustainability", emoji: "🌍", label: "环保永续与政策", tagline: "能源转型的取舍:一座城市能不能既减碳、又不破产?", points: ["能源取舍:可再生能源 vs 化石燃料的成本、碳排与可靠度比较", "真实数据判读:均化成本(LCOE)与碳排放的取舍", "科学概念建立:碳排放、间歇性、碳定价", "从数据到政策:碳税、补贴与能源组合的辩论"], file: "/slides/sustainability.pdf", ready: true },
       { id: "microbiology", emoji: "🧫", label: "微生物与生命科学", tagline: "从肉眼看不见的世界,理解健康、疾病与生态。", points: ["微生物的分类、生长与实验设计", "病原机制与抗药性的演化", "显微观察与数据记录的科学方法"], file: "/slides/microbiology.pdf", ready: false },
-      { id: "robotics-ai", emoji: "🤖", label: "机器人与 AI 应用", tagline: "动手把想法变成会运作的系统,并用数据验证成效。", points: ["感测、控制与自动化的基本原理", "机器学习模型的训练与评估", "把工程专题转化为可发表的研究"], file: "/slides/robotics-ai.pdf", ready: false },
+      { id: "ai-scheduling", emoji: "🗓️", label: "AI 智能排程系统", tagline: "用 AI 与算法解决真实世界的排程与资源分配问题。", points: ["把真实问题拆解成变量与约束条件(时间、人力、项目)", "排程与最优化:比较不同分配策略的效率与取舍", "用 AI 工具快速打造可运作的系统原型", "从用户研究到数据验证,像产品团队一样思考"], file: "/slides/ai-scheduling.pdf", ready: false },
     ],
     faqTitle: "常见问答",
     faq: [
@@ -244,7 +244,7 @@ export const content = {
       { id: "agri-food", emoji: "🌾", label: "農業與糧食", tagline: "作物病害與育種:我們如何餵養一個更健康的糧食系統?", points: ["作物病害管理:單一抗病基因 vs. 多基因堆疊 vs. 品種混植", "真實數據判讀:產量損失與成本的取捨分析", "科學概念建立:抗病性、病原、天擇", "案例研究:馬鈴薯晚疫病與愛爾蘭大饑荒的啟示"], file: "/slides/agri-food.pdf", ready: true },
       { id: "sustainability", emoji: "🌍", label: "環保永續與政策", tagline: "能源轉型的取捨:一座城市能不能既減碳、又不破產?", points: ["能源取捨:再生能源 vs 化石燃料的成本、碳排與可靠度比較", "真實數據判讀:均化成本(LCOE)與碳排放的取捨", "科學概念建立:碳排放、間歇性、碳定價", "從數據到政策:碳稅、補貼與能源組合的辯論"], file: "/slides/sustainability.pdf", ready: true },
       { id: "microbiology", emoji: "🧫", label: "微生物與生命科學", tagline: "從肉眼看不見的世界,理解健康、疾病與生態。", points: ["微生物的分類、生長與實驗設計", "病原機制與抗藥性的演化", "顯微觀察與數據紀錄的科學方法"], file: "/slides/microbiology.pdf", ready: false },
-      { id: "robotics-ai", emoji: "🤖", label: "機器人與 AI 應用", tagline: "動手把想法變成會運作的系統,並用數據驗證成效。", points: ["感測、控制與自動化的基本原理", "機器學習模型的訓練與評估", "把工程專題轉化為可發表的研究"], file: "/slides/robotics-ai.pdf", ready: false },
+      { id: "ai-scheduling", emoji: "🗓️", label: "AI 智慧排程系統", tagline: "用 AI 與演算法解決真實世界的排程與資源分配問題。", points: ["把真實問題拆解成變數與限制條件(時間、人力、專案)", "排程與最佳化:比較不同分配策略的效率與取捨", "用 AI 工具快速打造可運作的系統原型", "從使用者研究到數據驗證,像產品團隊一樣思考"], file: "/slides/ai-scheduling.pdf", ready: false },
     ],
     faqTitle: "常見問答",
     faq: [
@@ -385,7 +385,7 @@ export const content = {
       { id: "agri-food", emoji: "🌾", label: "Agriculture & Food", tagline: "Crop disease and breeding: how do we feed a healthier food system?", points: ["Disease management: single R-gene vs. stacked genes vs. varietal mixtures", "Reading real data: yield loss vs. cost tradeoffs", "Core concepts: resistance, pathogens, natural selection", "Case study: potato late blight and the Irish Famine"], file: "/slides/agri-food.pdf", ready: true },
       { id: "sustainability", emoji: "🌍", label: "Sustainability & Policy", tagline: "The energy transition: can a city cut carbon without going broke?", points: ["Energy trade-offs: renewables vs. fossil fuels on cost, carbon & reliability", "Reading real data: levelized cost (LCOE) vs. emissions", "Core concepts: carbon emissions, intermittency, carbon pricing", "From data to policy: carbon taxes, subsidies & the energy mix"], file: "/slides/sustainability.pdf", ready: true },
       { id: "microbiology", emoji: "🧫", label: "Microbiology & Life Science", tagline: "Understanding health, disease, and ecosystems from the invisible world.", points: ["Classifying and growing microbes; experimental design", "Pathogen mechanisms and the evolution of resistance", "Microscopy and rigorous data recording"], file: "/slides/microbiology.pdf", ready: false },
-      { id: "robotics-ai", emoji: "🤖", label: "Robotics & AI", tagline: "Turn ideas into working systems and validate them with data.", points: ["Sensing, control, and automation fundamentals", "Training and evaluating machine-learning models", "Turning an engineering project into publishable research"], file: "/slides/robotics-ai.pdf", ready: false },
+      { id: "ai-scheduling", emoji: "🗓️", label: "AI Smart Scheduling", tagline: "Use AI and algorithms to solve real-world scheduling and resource-allocation problems.", points: ["Break a real problem into variables and constraints (time, people, projects)", "Scheduling & optimization: compare allocation strategies and their trade-offs", "Use AI tools to rapidly build a working system prototype", "From user research to data validation — think like a product team"], file: "/slides/ai-scheduling.pdf", ready: false },
     ],
     faqTitle: "Frequently Asked Questions",
     faq: [

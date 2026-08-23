@@ -19,7 +19,8 @@ export default function SiteHeader({ lang, brand, brandEn, nav, locales }) {
     <header className="site-header">
       <div className="container header-inner">
         <a href={`/${lang}`} className="logo" onClick={close}>
-          🔬 <span className="logo-en">{brandEn}</span>
+          <img className="logo-mark" src="/icon.svg" alt="" width="30" height="30" />
+          <span className="logo-en">{brandEn}</span>
           {lang !== "en" && <span className="logo-zh">{brand}</span>}
         </a>
 

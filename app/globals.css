@@ -57,7 +57,8 @@ h1, h2, h3, h4 { line-height: 1.3; }
   position: sticky; top: 0; z-index: 20;
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
-.logo { display: flex; align-items: baseline; gap: 8px; min-width: 0; }
+.logo { display: flex; align-items: center; gap: 9px; min-width: 0; }
+.logo-mark { width: 30px; height: 30px; flex-shrink: 0; display: block; }
 .logo-en { font-weight: 800; font-size: 1.1rem; white-space: nowrap; }
 .logo-zh { font-size: 0.85rem; color: var(--muted); font-weight: 600; white-space: nowrap; }
 @media (max-width: 560px) { .logo-zh { display: none; } .logo-en { font-size: 1rem; } }

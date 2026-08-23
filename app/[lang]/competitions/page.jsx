@@ -21,15 +21,15 @@ export default async function CompetitionsPage({ params }) {
 
   return (
     <>
-      <section className="hero" style={{ paddingBottom: 8 }}>
-        <span className="hero-badge">🗓 {c.nav.program}</span>
-        <h1 style={{ fontFamily: "'Archivo', sans-serif", fontWeight: 800, fontSize: "2.4rem", margin: "10px 0 12px", letterSpacing: "-0.5px" }}>
-          {u.title}
-        </h1>
-        <p className="hero-sub">{u.desc}</p>
-        <p style={{ maxWidth: 640, margin: "0 auto", color: "var(--muted)", fontSize: "0.9rem" }}>
-          ⚠️ {u.disclaimer}
-        </p>
+      <section className="page-hero">
+        <div className="page-hero-inner">
+          <span className="hero-badge">🗓 {c.nav.program}</span>
+          <h1 style={{ fontFamily: "'Archivo', sans-serif", fontWeight: 800, fontSize: "2.4rem", margin: "10px 0 12px", letterSpacing: "-0.5px" }}>
+            {u.title}
+          </h1>
+          <p className="hero-sub">{u.desc}</p>
+          <p className="page-hero-note">⚠️ {u.disclaimer}</p>
+        </div>
       </section>
 
       {competitionCats.map((cat) => {

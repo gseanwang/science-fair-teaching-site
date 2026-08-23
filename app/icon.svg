@@ -1,0 +1,18 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="wsaBg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3B7BFF"/>
+      <stop offset="1" stop-color="#1E50C6"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="116" fill="url(#wsaBg)"/>
+  <!-- flask -->
+  <path d="M212 150h88a14 14 0 0 1 0 28h-4v46l70 150a40 40 0 0 1-36 57H196a40 40 0 0 1-36-57l70-150v-46h-4a14 14 0 0 1 0-28z"
+        fill="#fff"/>
+  <!-- liquid line + bubbles (cut back to blue) -->
+  <path d="M214 300h84l24 52a20 20 0 0 1-18 29H208a20 20 0 0 1-18-29l24-52z" fill="#2F6DF6"/>
+  <circle cx="238" cy="342" r="9" fill="#fff"/>
+  <circle cx="272" cy="356" r="7" fill="#fff"/>
+  <!-- spark -->
+  <path d="M372 96c5 30 11 36 41 41-30 5-36 11-41 41-5-30-11-36-41-41 30-5 36-11 41-41z" fill="#fff"/>
+</svg>

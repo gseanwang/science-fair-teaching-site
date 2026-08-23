@@ -141,6 +141,27 @@ h1, h2, h3, h4 { line-height: 1.3; }
 .hero-photo .hero-content { animation: heroUp 0.8s cubic-bezier(0.2,0.7,0.2,1) both; }
 @keyframes heroUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
 
+/* ---------- Sub-page header with background photo ---------- */
+.page-hero {
+  position: relative; max-width: none; width: 100%; margin: 0; padding: 0;
+  text-align: center; overflow: hidden; color: #fff;
+  background: #0E1A2B url('/hero.jpg') center 40% / cover no-repeat;
+}
+.page-hero::before {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(9,16,28,0.82) 0%, rgba(9,16,28,0.7) 100%);
+}
+.page-hero-inner {
+  position: relative; z-index: 1; max-width: 860px; margin: 0 auto; padding: 92px 20px 74px;
+  animation: heroUp 0.8s cubic-bezier(0.2,0.7,0.2,1) both;
+}
+.page-hero .hero-badge {
+  background: rgba(156,192,255,0.16); color: #C7D6F5; border: 1px solid rgba(156,192,255,0.3);
+}
+.page-hero h1 { color: #fff; }
+.page-hero .hero-sub { color: #C3CEDF; max-width: 680px; margin: 0 auto 16px; }
+.page-hero-note { color: rgba(255,255,255,0.72); font-size: 0.9rem; max-width: 640px; margin: 0 auto; }
+
 /* Scroll reveal (added by ScrollReveal.jsx) */
 .reveal-init { opacity: 0; transform: translateY(20px); }
 .reveal-init.reveal-in { opacity: 1; transform: none; transition: opacity 0.6s ease, transform 0.6s ease; }

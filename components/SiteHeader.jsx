@@ -10,6 +10,7 @@ export default function SiteHeader({ lang, brand, brandEn, nav, locales }) {
     { href: `/${lang}#course`, label: nav.program },
     { href: `/${lang}#slides`, label: nav.lessons },
     { href: `/${lang}/faculty`, label: nav.faculty },
+    { href: `/${lang}/competitions`, label: nav.competitions },
     { href: `/${lang}#pricing`, label: nav.pricing },
     { href: `/${lang}#faq`, label: nav.faq },
   ];

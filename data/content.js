@@ -21,7 +21,7 @@ export const content = {
   cn: {
     brand: "世界科展学院",
     brandEn: "World Science Academy",
-    nav: { program: "课程", lessons: "上课内容", faculty: "师资", pricing: "费用", faq: "问答", contact: "咨询" },
+    nav: { program: "课程", lessons: "上课内容", faculty: "师资", competitions: "科展资讯", pricing: "费用", faq: "问答", contact: "咨询" },
     footerNote: "创立于 2026 · Est. 2026",
 
     hero: {
@@ -160,7 +160,7 @@ export const content = {
   tw: {
     brand: "世界科展學院",
     brandEn: "World Science Academy",
-    nav: { program: "課程", lessons: "上課內容", faculty: "師資群", pricing: "費用", faq: "問答", contact: "諮詢" },
+    nav: { program: "課程", lessons: "上課內容", faculty: "師資群", competitions: "科展資訊", pricing: "費用", faq: "問答", contact: "諮詢" },
     footerNote: "創立於 2026 · Est. 2026",
 
     hero: {
@@ -299,7 +299,7 @@ export const content = {
   en: {
     brand: "World Science Academy",
     brandEn: "World Science Academy",
-    nav: { program: "Program", lessons: "Lessons", faculty: "Faculty", pricing: "Pricing", faq: "FAQ", contact: "Contact" },
+    nav: { program: "Program", lessons: "Lessons", faculty: "Faculty", competitions: "Competitions", pricing: "Pricing", faq: "FAQ", contact: "Contact" },
     footerNote: "Est. 2026",
 
     hero: {

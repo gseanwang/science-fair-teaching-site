@@ -92,7 +92,7 @@ export const content = {
     ],
     slidesSection: {
       title: "实际上课内容",
-      desc: "点选不同主题,看看我们如何带学生从概念、数据一步步做出判断 —— 这些领域,我们都能教。",
+      desc: "点选不同主题,看看我们如何带学生从概念、数据一步步做出判断 —— 这些是学生可以探索的研究主题范例。",
       comingSoon: "简报即将上线",
       deepDiveLead: "我们的课堂会带学生深入:",
       openLabel: "全屏打开简报 →",
@@ -233,7 +233,7 @@ export const content = {
     ],
     slidesSection: {
       title: "實際上課內容",
-      desc: "點選不同主題,看看我們如何帶學生從概念、數據一步步做出判斷 —— 這些領域,我們都能教。",
+      desc: "點選不同主題,看看我們如何帶學生從概念、數據一步步做出判斷 —— 這些是學生可以探索的研究主題範例。",
       comingSoon: "簡報即將上線",
       deepDiveLead: "我們的課堂會帶學生深入:",
       openLabel: "全螢幕開啟簡報 →",
@@ -374,7 +374,7 @@ export const content = {
     ],
     slidesSection: {
       title: "Inside Our Lessons",
-      desc: "Switch between topics to see how we guide students from concepts and data to real decisions — these are all fields we teach.",
+      desc: "Switch between topics to see how we guide students from concepts and data to real decisions — examples of research topics students may explore.",
       comingSoon: "Slides coming soon",
       deepDiveLead: "In this topic, we guide students through:",
       openLabel: "Open full screen →",

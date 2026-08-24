@@ -163,6 +163,33 @@ h1, h2, h3, h4 { line-height: 1.3; }
 .page-hero .hero-sub { color: #C3CEDF; max-width: 680px; margin: 0 auto 16px; }
 .page-hero-note { color: rgba(255,255,255,0.72); font-size: 0.9rem; max-width: 640px; margin: 0 auto; }
 
+/* ---------- Blog ---------- */
+.blog-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 22px; max-width: 1000px; margin: 0 auto; }
+.post-card { display: block; border: 1px solid #e6e9ef; border-radius: 16px; padding: 26px 26px 22px; text-decoration: none; color: inherit; background: #fff; transition: box-shadow .2s, transform .2s, border-color .2s; }
+.post-card:hover { box-shadow: 0 12px 30px rgba(16,32,43,.1); transform: translateY(-2px); border-color: #cdd6e4; }
+.post-card-meta { font-size: .8rem; color: var(--muted); font-weight: 600; letter-spacing: .3px; }
+.post-card h3 { font-family: 'Archivo', sans-serif; font-size: 1.18rem; line-height: 1.4; margin: .5rem 0; }
+.post-card p { color: var(--muted); font-size: .95rem; line-height: 1.6; margin: 0 0 .8rem; }
+.post-card-more { color: #2F6DF6; font-weight: 700; font-size: .9rem; }
+
+.post { max-width: 720px; }
+.post-back { color: #2F6DF6; font-weight: 600; text-decoration: none; font-size: .92rem; }
+.post-back:hover { text-decoration: underline; }
+.post-meta { color: var(--muted); font-size: .85rem; font-weight: 600; margin: 18px 0 6px; }
+.post-title { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 2rem; line-height: 1.22; letter-spacing: -.5px; margin: 0 0 24px; }
+
+.prose { font-size: 1.05rem; line-height: 1.85; color: #2b333d; }
+.prose h2 { font-family: 'Archivo', sans-serif; font-size: 1.38rem; margin: 1.9em 0 .6em; letter-spacing: -.3px; color: var(--brand-dark); }
+.prose p { margin: 0 0 1.15em; }
+.prose strong { color: var(--brand-dark); }
+.prose a { color: #2F6DF6; text-decoration: underline; }
+.prose ul, .prose ol { margin: 0 0 1.15em; padding-left: 1.4em; }
+.prose li { margin: .35em 0; }
+.prose hr { border: none; border-top: 1px solid #e6e9ef; margin: 2em 0; }
+
+.post-cta { margin-top: 40px; padding: 28px; border-radius: 18px; background: #F5F7FB; text-align: center; }
+.post-cta p { font-weight: 600; margin: 0 0 14px; }
+
 /* Scroll reveal (added by ScrollReveal.jsx) */
 .reveal-init { opacity: 0; transform: translateY(20px); }
 .reveal-init.reveal-in { opacity: 1; transform: none; transition: opacity 0.6s ease, transform 0.6s ease; }

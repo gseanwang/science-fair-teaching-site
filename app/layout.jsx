@@ -2,19 +2,19 @@ import "./globals.css";
 
 export const metadata = {
   metadataBase: new URL("https://www.worldscienceacademy.org"),
-  title: "世界科展學院 World Science Academy｜讓孩子站上世界的舞台",
+  title: "世界科展学院 World Science Academy｜让孩子站上世界的舞台",
   description:
-    "對接亞洲、美洲、歐洲等世界各地科展賽事,為孩子量身規劃完整研究輔導 —— 論文、海報、口頭發表一次到位。全程線上。",
+    "对接亚洲、美洲、欧洲等世界各地科展赛事,为孩子量身规划完整研究辅导 —— 论文、海报、口头发表一次到位。全程线上。",
   keywords: [
-    "科展輔導", "科展指導", "研究輔導", "科學競賽", "World Science Academy", "世界科展學院",
-    "ISEF", "Regeneron STS", "science fair mentorship", "research paper coaching", "留學升學",
+    "科展辅导", "科展指导", "研究辅导", "科学竞赛", "World Science Academy", "世界科展学院",
+    "科展輔導", "科學競賽", "ISEF", "Regeneron STS", "science fair mentorship", "research paper coaching",
   ],
-  alternates: { canonical: "/tw/" },
+  alternates: { canonical: "/cn/" },
   openGraph: {
-    title: "世界科展學院 World Science Academy｜讓孩子站上世界的舞台",
+    title: "世界科展学院 World Science Academy｜让孩子站上世界的舞台",
     description:
-      "對接亞洲、美洲、歐洲等世界各地科展賽事,為孩子量身規劃完整研究輔導 —— 論文、海報、口頭發表一次到位。全程線上。",
-    url: "https://www.worldscienceacademy.org/tw/",
+      "对接亚洲、美洲、欧洲等世界各地科展赛事,为孩子量身规划完整研究辅导 —— 论文、海报、口头发表一次到位。全程线上。",
+    url: "https://www.worldscienceacademy.org/cn/",
     siteName: "World Science Academy",
     type: "website",
   },

@@ -14,7 +14,7 @@ export const locales = [
   { code: "en", label: "EN", htmlLang: "en" },
   { code: "cn", label: "简体", htmlLang: "zh-Hans" },
 ];
-export const defaultLocale = "tw";
+export const defaultLocale = "cn";
 
 export const content = {
   // ========================= 简体 =========================

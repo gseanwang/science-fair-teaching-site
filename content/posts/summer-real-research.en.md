@@ -1,7 +1,7 @@
 ---
 title: "One Summer, He Used AI to Sift 1.5 Million Stars for NASA — What Is a Teenager's Summer Really Worth?"
 date: "2026-08-23"
-excerpt: "An ordinary high-schooler turned six weeks of summer into his first real job. What's worth learning isn't his genius — it's how he thought about his summer."
+excerpt: "An ordinary high-schooler turned six weeks of summer into his first real job. The part worth paying attention to isn't how gifted he is — it's how he chose to spend those weeks."
 readMins: "6"
 ---
 
@@ -23,19 +23,19 @@ Instead of combing the data row by row, he sat down and wrote code, weaving sign
 
 The work was later published in the leading journal *The Astronomical Journal* — with a single name in the author line. On the strength of it, he won the **Regeneron Science Talent Search**, one of the most prestigious high-school research competitions in the US, and its **$250,000** top prize; Caltech offered him a paid position before he'd even finished high school.
 
-## The point isn't "genius" — it's how he approached his summer
+## Before you call him a prodigy, look at how he spent his summer
 
-I don't want to write this as another "look at that amazing kid" story. What parents should really take away is three things.
+I don't want to write this as another "look at that amazing kid" story. There are really three things worth taking away.
 
-**First, he met a real problem — not problem #37 in a workbook.** Many US university summer research programs are built on one idea: the mentor doesn't hand you the answer, only a problem, and you figure out the rest. That process is far harder than memorizing a fact — because the real world has no answer key.
+**First, he was working on a real problem.** Many US university summer research programs are built on one idea: the mentor hands you a problem, not an answer, and you figure out the rest. That's far harder than memorizing a fact — the real world simply has no answer key.
 
-**Second, he treated AI as a colleague, not a crutch.** Plenty of high-schoolers can use ChatGPT now. The difference: he decided what to hand off to AI, and did the part AI can't — designing the approach, validating the results, refining the model. In the age of AI, the valuable people are the ones who ask the questions, set the plan, pull the pieces together, and check the work.
+**Second, he used AI like a colleague.** Plenty of high-schoolers can use ChatGPT now. What set him apart is that he handed the repetitive grind to AI and spent his own time on the parts AI can't do — designing the approach, checking the results, improving the model. In the age of AI, the people who matter are the ones who can ask a good question, set a direction, and tell whether an answer is any good.
 
-**Third, admissions increasingly reward real work.** A paper, a project, a prototype that actually runs — these can't be faked or packaged. Admissions officers want to see a child's ability to solve problems, not the length of an activities list.
+**Third, admissions officers increasingly want to see something real.** A paper, a project, a prototype that actually runs — those can't be faked or packaged. What they're really after is whether a child can solve problems; the length of an activities list matters far less.
 
 ## So how should your child spend the summer?
 
-The biggest waste isn't "playing." It's spending the whole summer **completing tasks someone else assigned** — math in the morning, English in the afternoon, physics at night, busy as a clock-punching job, and two months later with nothing of their own to show for it.
+Honestly, the real waste of a summer usually isn't the time spent having fun. It's spending two months ticking boxes on someone else's list — math in the morning, English in the afternoon, physics at night — busy as a clock-punching job, with nothing of their own to show at the end.
 
 Foundations matter, of course. But summer is a rare stretch of six to eight weeks to sink into one real thing and make something your own: a program, a study, a small website, a model. That kind of evidence beats "worked hard this summer" a hundred times over when it comes to college and internship applications.
 

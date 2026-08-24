@@ -137,6 +137,7 @@ h1, h2, h3, h4 { line-height: 1.3; }
 .btn-hero-ghost { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.5); color: #fff; }
 .btn-hero-ghost:hover { background: rgba(255,255,255,0.16); border-color: #fff; color: #fff; }
 .hero-ai-line { color: #B9C6DC; font-size: 0.98rem; font-weight: 500; margin: 20px 0 0; }
+.hero-coming-soon { display: inline-block; margin: 0 0 18px; padding: 6px 16px; border-radius: 999px; background: rgba(232,161,58,0.16); color: #F0C36B; border: 1px solid rgba(232,161,58,0.45); font-size: 0.82rem; font-weight: 700; letter-spacing: 1.5px; }
 
 /* Hero load animation */
 .hero-photo .hero-content { animation: heroUp 0.8s cubic-bezier(0.2,0.7,0.2,1) both; }

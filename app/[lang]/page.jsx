@@ -1,4 +1,5 @@
 import { content, locales } from "../../data/content";
+import { preLaunch, preLaunchUi } from "../../data/prelaunch";
 import { notFound } from "next/navigation";
 import Faq from "../../components/Faq";
 import Slides from "../../components/Slides";
@@ -28,6 +29,7 @@ export default async function HomePage({ params }) {
   const { lang } = await params;
   const c = content[lang];
   if (!c) notFound();
+  const pl = preLaunchUi[lang];
 
   return (
     <>
@@ -39,8 +41,9 @@ export default async function HomePage({ params }) {
           <h1 className="hero-title-en">{c.hero.titleMain}</h1>
           {c.hero.titleSub && <p className="hero-title-zh">{c.hero.titleSub}</p>}
           <p className="hero-sub">{c.hero.subtitle}</p>
+          {preLaunch && <span className="hero-coming-soon">{pl.comingSoon}</span>}
           <div className="hero-cta">
-            <a className="btn btn-primary btn-lg" href={`/${lang}${c.hero.ctaHref}`}>{c.hero.ctaText}</a>
+            <a className="btn btn-primary btn-lg" href={`/${lang}#contact`}>{preLaunch ? pl.cta : c.hero.ctaText}</a>
             <a className="btn btn-hero-ghost btn-lg" href={`/${lang}${c.hero.secondaryHref}`}>{c.hero.secondaryText}</a>
           </div>
           {c.hero.aiLine && <p className="hero-ai-line">{c.hero.aiLine}</p>}
@@ -114,7 +117,8 @@ export default async function HomePage({ params }) {
         </div>
       </section>
 
-      {/* ===================== 費用方案 ===================== */}
+      {/* ===================== 費用方案(pre-launch 時隱藏)===================== */}
+      {!preLaunch && (
       <section className="section" id="pricing">
         <h2 className="section-title">{c.pricingTitle}</h2>
         <div className="price-grid">
@@ -141,6 +145,7 @@ export default async function HomePage({ params }) {
         </div>
         <p className="price-note">💡 {c.pricingNote}</p>
       </section>
+      )}
 
       {/* ===================== 常見問答 ===================== */}
       <section className="section" id="faq">
@@ -150,10 +155,10 @@ export default async function HomePage({ params }) {
 
       {/* ===================== 諮詢表單 ===================== */}
       <section className="cta-band" id="contact">
-        <h2>{c.contact.heading}</h2>
-        <p>{c.contact.subheading}</p>
+        <h2>{preLaunch ? pl.heading : c.contact.heading}</h2>
+        <p>{preLaunch ? pl.sub : c.contact.subheading}</p>
         <div className="form-wrap">
-          <ContactForm contact={c.contact} />
+          <ContactForm contact={preLaunch ? { ...c.contact, submitText: pl.submit, successMessage: pl.success } : c.contact} />
         </div>
       </section>
     </>

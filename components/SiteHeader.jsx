@@ -1,18 +1,21 @@
 "use client";
 
 import { useState } from "react";
+import { preLaunch, preLaunchUi } from "../data/prelaunch";
 
 export default function SiteHeader({ lang, brand, brandEn, nav, locales }) {
   const [open, setOpen] = useState(false);
   const close = () => setOpen(false);
 
+  const contactLabel = preLaunch ? preLaunchUi[lang].navContact : nav.contact;
   const links = [
     { href: `/${lang}#course`, label: nav.program },
     { href: `/${lang}#slides`, label: nav.lessons },
     { href: `/${lang}/faculty`, label: nav.faculty },
     { href: `/${lang}/competitions`, label: nav.competitions },
     { href: `/${lang}/blog`, label: nav.blog },
-    { href: `/${lang}#pricing`, label: nav.pricing },
+    // 費用連結 pre-launch 時隱藏
+    ...(preLaunch ? [] : [{ href: `/${lang}#pricing`, label: nav.pricing }]),
     { href: `/${lang}#faq`, label: nav.faq },
   ];
 
@@ -30,7 +33,7 @@ export default function SiteHeader({ lang, brand, brandEn, nav, locales }) {
           {links.map((l) => (
             <a key={l.href} href={l.href}>{l.label}</a>
           ))}
-          <a href={`/${lang}#contact`} className="nav-cta">{nav.contact}</a>
+          <a href={`/${lang}#contact`} className="nav-cta">{contactLabel}</a>
           <span className="lang-switch">
             {locales.map((l) => (
               <a key={l.code} href={`/${l.code}`} className={"lang-opt" + (l.code === lang ? " active" : "")}>
@@ -57,7 +60,7 @@ export default function SiteHeader({ lang, brand, brandEn, nav, locales }) {
           {links.map((l) => (
             <a key={l.href} href={l.href} onClick={close}>{l.label}</a>
           ))}
-          <a href={`/${lang}#contact`} className="mobile-cta" onClick={close}>{nav.contact}</a>
+          <a href={`/${lang}#contact`} className="mobile-cta" onClick={close}>{contactLabel}</a>
           <div className="mobile-lang">
             {locales.map((l) => (
               <a key={l.code} href={`/${l.code}`} className={"lang-opt" + (l.code === lang ? " active" : "")}>

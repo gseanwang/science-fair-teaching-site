@@ -1,4 +1,13 @@
 // Blog 分頁的介面文字,分三語。文章本身在 content/posts/*.md。
+// 合作夥伴 podcast(文章結尾「延伸收聽」)—— 換節目就改這裡。
+export const listen = {
+  name: "Audrey老師・八分鐘家長答疑",
+  ep: "EP18｜AI 時代,我們到底該替孩子規劃什麼?",
+  url: "https://audreycollegecoach.substack.com/p/ep18ai",
+  tag: { tw: "延伸收聽", en: "Recommended listening", cn: "延伸收听" },
+  hint: { tw: "Podcast", en: "Podcast", cn: "Podcast" },
+};
+
 export const blogUi = {
   tw: {
     title: "科展・升學觀點",

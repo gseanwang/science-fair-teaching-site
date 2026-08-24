@@ -1,5 +1,5 @@
 import { content } from "../../../../data/content";
-import { blogUi } from "../../../../data/blogUi";
+import { blogUi, listen } from "../../../../data/blogUi";
 import { getAllPosts, getPost } from "../../../../lib/posts";
 import { notFound } from "next/navigation";
 
@@ -41,6 +41,17 @@ export default async function Post({ params }) {
       </div>
       <h1 className="post-title">{p.title}</h1>
       <div className="prose" dangerouslySetInnerHTML={{ __html: p.html }} />
+
+      <a className="post-listen" href={listen.url} target="_blank" rel="noopener noreferrer">
+        <div className="post-listen-icon">🎧</div>
+        <div className="post-listen-body">
+          <div className="post-listen-tag">{listen.tag[lang]} · {listen.hint[lang]}</div>
+          <div className="post-listen-name">{listen.name}</div>
+          <div className="post-listen-ep">{listen.ep}</div>
+        </div>
+        <div className="post-listen-arrow">→</div>
+      </a>
+
       <div className="post-cta">
         <p>{u.ctaText}</p>
         <a className="btn btn-primary" href={`/${lang}#contact`}>{u.ctaBtn}</a>

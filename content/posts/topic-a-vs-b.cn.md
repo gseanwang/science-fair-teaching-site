@@ -53,8 +53,8 @@ A 同学和 B 同学都想研究「声音对植物的影响」。他们各写了
 <details class="cx-reveal">
 <summary>点开看评审怎么评</summary>
 <div class="cx-reveal-body">
-<p><strong>A 同学 · 偏低。</strong> 样本少、只做一次,却用「证明」「可用于农业」这种大话,把结论讲死了,评审会觉得不够严谨。</p>
-<p><strong>B 同学 · 偏高。</strong> 结论紧扣数据,还主动写出限制。</p>
+<p><strong>A 同学 · 大约 2 分。</strong> 样本少、只做一次,却用「证明」「可用于农业」这种大话,把结论讲死了,评审会觉得不够严谨。</p>
+<p><strong>B 同学 · 大约 5 分。</strong> 结论紧扣数据,还主动写出限制。</p>
 <p><strong>关键差别:</strong> 很多学生以为「写缺点会扣分」,于是把结论讲满。但在评审眼里,敢写限制的学生,反而更成熟、更可信。</p>
 </div>
 </details>

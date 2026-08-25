@@ -53,8 +53,8 @@ A 同學和 B 同學都想研究「聲音對植物的影響」。他們各寫了
 <details class="cx-reveal">
 <summary>點開看評審怎麼評</summary>
 <div class="cx-reveal-body">
-<p><strong>A 同學 · 偏低。</strong> 樣本少、只做一次,卻用「證明」「可用於農業」這種大話,把結論講死了,評審會覺得不夠嚴謹。</p>
-<p><strong>B 同學 · 偏高。</strong> 結論緊扣數據,還主動寫出限制。</p>
+<p><strong>A 同學 · 大約 2 分。</strong> 樣本少、只做一次,卻用「證明」「可用於農業」這種大話,把結論講死了,評審會覺得不夠嚴謹。</p>
+<p><strong>B 同學 · 大約 5 分。</strong> 結論緊扣數據,還主動寫出限制。</p>
 <p><strong>關鍵差別:</strong> 很多學生以為「寫缺點會扣分」,於是把結論講滿。但在評審眼裡,敢寫限制的學生,反而更成熟、更可信。</p>
 </div>
 </details>

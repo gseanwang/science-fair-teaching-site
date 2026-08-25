@@ -71,8 +71,8 @@ cover: "/blog/score.jpg"
 <details class="cx-reveal">
 <summary>點開看評審怎麼評</summary>
 <div class="cx-reveal-body">
-<p><strong>寫法 A · 偏低。</strong> 少了對照、重複、圖表,評審無從判斷這個結論站不站得住。</p>
-<p><strong>寫法 B · 偏高。</strong> 方法與結果都能被檢驗;就算結論平凡,也拿得到分。</p>
+<p><strong>寫法 A · 大約 1 分。</strong> 少了對照、重複、圖表,評審無從判斷這個結論站不站得住。</p>
+<p><strong>寫法 B · 大約 5 分。</strong> 方法與結果都能被檢驗;就算結論平凡,也拿得到分。</p>
 </div>
 </details>
 

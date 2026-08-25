@@ -71,8 +71,8 @@ cover: "/blog/score.jpg"
 <details class="cx-reveal">
 <summary>点开看评审怎么评</summary>
 <div class="cx-reveal-body">
-<p><strong>写法 A · 偏低。</strong> 少了对照、重复、图表,评审无从判断这个结论站不站得住。</p>
-<p><strong>写法 B · 偏高。</strong> 方法与结果都能被检验;就算结论平凡,也拿得到分。</p>
+<p><strong>写法 A · 大约 1 分。</strong> 少了对照、重复、图表,评审无从判断这个结论站不站得住。</p>
+<p><strong>写法 B · 大约 5 分。</strong> 方法与结果都能被检验;就算结论平凡,也拿得到分。</p>
 </div>
 </details>
 

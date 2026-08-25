@@ -28,15 +28,18 @@ export default function BlogList({ posts, lang, ui, categories, catAll }) {
 
       <div className="blog-list">
         {shown.map((p) => (
-          <a key={p.slug} className="post-card" href={`/${lang}/blog/${p.slug}/`}>
-            <div className="post-card-meta">
-              {p.category && <span className="post-cat-badge">{catLabel(p.category)}</span>}
-              {p.date}
-              {p.readMins ? ` · ${p.readMins} ${ui.min}` : ""}
+          <a key={p.slug} className={"post-card" + (p.cover ? " has-cover" : "")} href={`/${lang}/blog/${p.slug}/`}>
+            {p.cover && <div className="post-card-cover" style={{ backgroundImage: `url(${p.cover})` }} />}
+            <div className="post-card-body">
+              <div className="post-card-meta">
+                {p.category && <span className="post-cat-badge">{catLabel(p.category)}</span>}
+                {p.date}
+                {p.readMins ? ` · ${p.readMins} ${ui.min}` : ""}
+              </div>
+              <h3>{p.title}</h3>
+              {p.excerpt && <p>{p.excerpt}</p>}
+              <span className="post-card-more">{ui.readMore} →</span>
             </div>
-            <h3>{p.title}</h3>
-            {p.excerpt && <p>{p.excerpt}</p>}
-            <span className="post-card-more">{ui.readMore} →</span>
           </a>
         ))}
       </div>

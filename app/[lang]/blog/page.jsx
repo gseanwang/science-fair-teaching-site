@@ -28,6 +28,7 @@ export default async function BlogIndex({ params }) {
   const posts = getPosts(lang).map((p) => ({
     slug: p.slug, title: p.title, excerpt: p.excerpt || "",
     date: p.date || "", readMins: p.readMins || "", category: p.category || "",
+    cover: p.cover || "",
   }));
 
   return (

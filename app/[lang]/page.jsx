@@ -67,21 +67,21 @@ export default async function HomePage({ params }) {
         </div>
       </section>
 
-      {/* ===================== 實際上課內容(內容先行,上移) ===================== */}
-      <Slides section={c.slidesSection} topics={c.topics} />
-
-      {/* ===================== 最新文章 ===================== */}
+      {/* ===================== 最新文章(內容先行:blog 放前面) ===================== */}
       {latestPosts.length > 0 && (
         <section className="section">
           <h2 className="section-title">{c.nav.blog}</h2>
           <p className="section-lead">{bu.desc}</p>
           <div className="blog-list">
             {latestPosts.map((p) => (
-              <a key={p.slug} className="post-card" href={`/${lang}/blog/${p.slug}/`}>
-                <div className="post-card-meta">{p.date}{p.readMins ? ` · ${p.readMins} ${bu.min}` : ""}</div>
-                <h3>{p.title}</h3>
-                {p.excerpt && <p>{p.excerpt}</p>}
-                <span className="post-card-more">{bu.readMore} →</span>
+              <a key={p.slug} className={"post-card" + (p.cover ? " has-cover" : "")} href={`/${lang}/blog/${p.slug}/`}>
+                {p.cover && <div className="post-card-cover" style={{ backgroundImage: `url(${p.cover})` }} />}
+                <div className="post-card-body">
+                  <div className="post-card-meta">{p.date}{p.readMins ? ` · ${p.readMins} ${bu.min}` : ""}</div>
+                  <h3>{p.title}</h3>
+                  {p.excerpt && <p>{p.excerpt}</p>}
+                  <span className="post-card-more">{bu.readMore} →</span>
+                </div>
               </a>
             ))}
           </div>
@@ -92,6 +92,9 @@ export default async function HomePage({ params }) {
           </div>
         </section>
       )}
+
+      {/* ===================== 實際上課內容 ===================== */}
+      <Slides section={c.slidesSection} topics={c.topics} />
 
       {/* ===================== 課程架構 ===================== */}
       <section className="section" id="course">

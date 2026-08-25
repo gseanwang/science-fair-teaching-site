@@ -4,6 +4,7 @@ date: "2026-08-23"
 excerpt: "一個普通高中生,把六週暑假過成了人生第一份工作。最值得家長琢磨的,是他怎麼安排這個暑假。"
 readMins: "6"
 category: "ai"
+cover: "/blog/space.jpg"
 ---
 
 > 編者按:本文的故事與靈感,源自公眾號「甜蜜Susan(朵朵花開了)」的分享,以及 Matteo Paz 的公開報導;由 World Science Academy 整理改寫,文中觀點為我們所加。

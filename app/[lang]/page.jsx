@@ -54,20 +54,7 @@ export default async function HomePage({ params }) {
         </div>
       </section>
 
-      {/* ===================== 三大特色 ===================== */}
-      <section className="section">
-        <div className="highlight-grid">
-          {c.highlights.map((h, i) => (
-            <div className="highlight-card" key={i}>
-              <div className="highlight-icon">{HL_ICONS[h.icon]}</div>
-              <h3>{h.title}</h3>
-              <p>{h.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* ===================== 最新文章(內容先行:blog 放前面) ===================== */}
+      {/* ===================== 最新文章(一進站先看到 blog) ===================== */}
       {latestPosts.length > 0 && (
         <section className="section">
           <h2 className="section-title">{c.nav.blog}</h2>
@@ -92,6 +79,19 @@ export default async function HomePage({ params }) {
           </div>
         </section>
       )}
+
+      {/* ===================== 三大特色 ===================== */}
+      <section className="section">
+        <div className="highlight-grid">
+          {c.highlights.map((h, i) => (
+            <div className="highlight-card" key={i}>
+              <div className="highlight-icon">{HL_ICONS[h.icon]}</div>
+              <h3>{h.title}</h3>
+              <p>{h.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
       {/* ===================== 實際上課內容 ===================== */}
       <Slides section={c.slidesSection} topics={c.topics} />

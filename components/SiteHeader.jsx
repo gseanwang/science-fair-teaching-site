@@ -12,7 +12,6 @@ export default function SiteHeader({ lang, brand, brandEn, nav, locales }) {
   const links = [
     { href: `/${lang}/blog`, label: nav.blog },
     { href: `/${lang}/competitions`, label: nav.competitions },
-    { href: `/${lang}#slides`, label: nav.lessons },
     { href: `/${lang}/faculty`, label: nav.faculty },
     { href: `/${lang}#course`, label: nav.program },
     // 費用連結 pre-launch 時隱藏

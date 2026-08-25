@@ -134,7 +134,7 @@ export const content = {
           groups: [
             { title: "我也坐过评审桌", star: true, points: ["JSHS 美国高中科学竞赛 区域评审", "国际期刊论文 审稿人", "学会专书 章节审查委员"], footer: "我知道评审在看什么" },
             { title: "研究实力", points: ["第一作者国际期刊论文发表", "Python / R 数据建模", "AI / 机器学习应用"] },
-            { title: "应用研究与推广", points: ["UF/IFAS EDIS 萝卜病害推广文章", "农业部技术支援专员:撰写 4 份整合病虫害管理(IPM)技术手册", "田间试验与种子处理实务"] },
+            { title: "应用研究与推广", points: [{ text: "UF/IFAS EDIS 推广文章:胡萝卜早疫病(Alternaria)管理", url: "https://ask.ifas.ufl.edu/publication/PP392" }, "农业部技术支援专员:撰写 4 份整合病虫害管理(IPM)技术手册", "田间试验与种子处理实务"] },
             { title: "教学经验", points: ["美国佛罗里达大学 研究所助教(课程设计与实验课)", "指导过 7 位以上年轻研究者", "K-12 教师工作坊 讲师", "中英双语教学", "多年一对一 / 小班辅导"] },
           ],
           awards: ["多年科展研究辅导经验・已指导 7 位以上年轻研究者", "JSHS 美国高中科学竞赛 区域评审", "国际期刊论文审稿人・第一作者论文发表", "台湾教育部海外留学励学奖学金 得主"],
@@ -303,7 +303,7 @@ export const content = {
           groups: [
             { title: "我也坐過評審桌", star: true, points: ["JSHS 美國高中科學競賽 區域評審", "國際期刊論文 審稿人", "學會專書 章節審查委員"], footer: "我知道評審在看什麼" },
             { title: "研究實力", points: ["第一作者國際期刊論文發表", "Python / R 數據建模", "AI / 機器學習應用"] },
-            { title: "應用研究與推廣", points: ["UF/IFAS EDIS 蘿蔔病害推廣文章", "農業部技術支援專員:撰寫 4 份整合病蟲害管理(IPM)技術手冊", "田間試驗與種子處理實務"] },
+            { title: "應用研究與推廣", points: [{ text: "UF/IFAS EDIS 推廣文章:胡蘿蔔早疫病(Alternaria)管理", url: "https://ask.ifas.ufl.edu/publication/PP392" }, "農業部技術支援專員:撰寫 4 份整合病蟲害管理(IPM)技術手冊", "田間試驗與種子處理實務"] },
             { title: "教學經驗", points: ["美國佛羅里達大學 研究所助教(課程設計與實驗課)", "指導過 7 位以上年輕研究者", "K-12 教師工作坊 講師", "中英雙語教學", "多年一對一 / 小班輔導"] },
           ],
           awards: ["多年科展研究輔導經驗・已指導 7 位以上年輕研究者", "JSHS 美國高中科學競賽 區域評審", "國際期刊論文審稿人・第一作者論文發表", "台灣教育部海外留學勵學獎學金 得主"],
@@ -472,7 +472,7 @@ export const content = {
           groups: [
             { title: "Judge & Reviewer Experience", star: true, points: ["Regional judge, JSHS high-school science competition", "Peer reviewer for international journals", "Chapter reviewer for academic books"], footer: "I know what makes research stand out" },
             { title: "Research Strength", points: ["First-author international journal publications", "Data modeling in Python / R", "AI / machine-learning applications"] },
-            { title: "Applied Research & Extension", points: ["UF/IFAS EDIS carrot-disease extension article", "Ministry of Agriculture (Taiwan): authored 4 IPM technical bulletins", "Field trials & seed-treatment practice"] },
+            { title: "Applied Research & Extension", points: [{ text: "UF/IFAS EDIS article: Managing Alternaria leaf blight of carrot", url: "https://ask.ifas.ufl.edu/publication/PP392" }, "Ministry of Agriculture (Taiwan): authored 4 IPM technical bulletins", "Field trials & seed-treatment practice"] },
             { title: "Teaching Experience", points: ["Graduate Teaching Assistant, University of Florida (lab design & materials)", "Mentored 7+ young researchers", "Instructor at K-12 teacher workshops", "Bilingual (Chinese/English) teaching", "Years of 1-on-1 / small-group coaching"] },
           ],
           awards: ["Years mentoring science-fair research — 7+ young researchers guided", "Regional judge, JSHS high-school science competition", "Peer reviewer & first-author, international journals", "Recipient, Taiwan MOE Overseas Study Scholarship"],

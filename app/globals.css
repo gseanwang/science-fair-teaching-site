@@ -527,3 +527,7 @@ h1, h2, h3, h4 { line-height: 1.3; }
   .hero-overlay { background: linear-gradient(180deg, rgba(9,16,28,0.72), rgba(9,16,28,0.88)); }
   .hero-content { padding: 72px 20px 64px; }
 }
+
+/* 師資頁:可點擊的成果連結(例如 EDIS 發表) */
+.fm-group .fm-link { color: var(--brand); font-weight: 600; text-decoration: none; border-bottom: 1px solid rgba(47,109,246,.3); }
+.fm-group .fm-link:hover { color: var(--brand-dark); border-bottom-color: var(--brand-dark); }

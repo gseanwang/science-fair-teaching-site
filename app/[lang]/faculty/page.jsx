@@ -64,7 +64,13 @@ export default async function FacultyPage({ params }) {
                   {g.title} {g.star && <span className="fm-star">★</span>}
                 </h3>
                 <ul>
-                  {g.points.map((p, k) => <li key={k}>{p}</li>)}
+                  {g.points.map((p, k) => (
+                    <li key={k}>
+                      {typeof p === "string" ? p : (
+                        <a className="fm-link" href={p.url} target="_blank" rel="noopener noreferrer">{p.text} ↗</a>
+                      )}
+                    </li>
+                  ))}
                 </ul>
                 {g.footer && <div className="fm-group-footer">→ {g.footer}</div>}
               </div>

@@ -194,6 +194,17 @@ h1, h2, h3, h4 { line-height: 1.3; }
 .prose .cx-compare > div { margin-bottom: 0; }
 @media (max-width: 600px) { .prose .cx-compare { grid-template-columns: 1fr; } }
 
+/* Interactive "you be the judge" —— neutral example box + click-to-reveal answer */
+.prose .cx-quiz { background: #fff; border: 1px solid #dfe4ec; border-left: 4px solid #98A2B3; border-radius: 10px; padding: 14px 18px; margin: 0 0 12px; line-height: 1.7; }
+.prose details.cx-reveal { margin: 16px 0 1.5em; border: 1px solid #e6e9ef; border-radius: 12px; overflow: hidden; background: #fff; }
+.prose details.cx-reveal > summary { cursor: pointer; list-style: none; padding: 13px 18px; font-weight: 700; color: #2F6DF6; background: #EEF3FC; user-select: none; }
+.prose details.cx-reveal > summary::-webkit-details-marker { display: none; }
+.prose details.cx-reveal > summary::before { content: "▸  "; }
+.prose details.cx-reveal[open] > summary { border-bottom: 1px solid #e6e9ef; }
+.prose details.cx-reveal[open] > summary::before { content: "▾  "; }
+.prose .cx-reveal-body { padding: 16px 18px 6px; }
+.prose .cx-reveal-body p { margin: 0 0 .9em; }
+
 .post { max-width: 720px; }
 .post-back { color: #2F6DF6; font-weight: 600; text-decoration: none; font-size: .92rem; }
 .post-back:hover { text-decoration: underline; }

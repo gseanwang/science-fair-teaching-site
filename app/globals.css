@@ -172,6 +172,27 @@ h1, h2, h3, h4 { line-height: 1.3; }
 .post-card h3 { font-family: 'Archivo', sans-serif; font-size: 1.18rem; line-height: 1.4; margin: .5rem 0; }
 .post-card p { color: var(--muted); font-size: .95rem; line-height: 1.6; margin: 0 0 .8rem; }
 .post-card-more { color: #2F6DF6; font-weight: 700; font-size: .9rem; }
+.post-cat-badge { display: inline-block; background: #EEF2FB; color: #2F6DF6; font-weight: 700; font-size: .72rem; padding: 2px 9px; border-radius: 999px; margin-right: 8px; }
+
+/* Blog category filter chips */
+.blog-cats { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; max-width: 1000px; margin: 0 auto 28px; }
+.blog-cat { border: 1px solid #e0e5ee; background: #fff; color: var(--muted); font-weight: 600; font-size: .9rem; padding: 7px 16px; border-radius: 999px; cursor: pointer; transition: all .15s; }
+.blog-cat:hover { border-color: #2F6DF6; color: #2F6DF6; }
+.blog-cat.active { background: #2F6DF6; border-color: #2F6DF6; color: #fff; }
+
+/* Teardown callouts — use in article markdown as raw HTML:
+   <div class="cx-good">✅ 好在哪:…</div>  <div class="cx-warn">⚠️ 待加強:…</div>
+   <div class="cx-example">學生原文引用…</div>  <div class="cx-note">重點提醒…</div>
+   <div class="cx-compare"><div class="cx-good">…</div><div class="cx-warn">…</div></div> */
+.prose .cx-good, .prose .cx-warn, .prose .cx-note, .prose .cx-example { border-radius: 10px; padding: 14px 18px; margin: 0 0 1.3em; font-size: 1rem; line-height: 1.7; }
+.prose .cx-good p:last-child, .prose .cx-warn p:last-child, .prose .cx-note p:last-child, .prose .cx-example p:last-child { margin-bottom: 0; }
+.prose .cx-good { background: #F0FAF4; border-left: 4px solid #0B7A50; }
+.prose .cx-warn { background: #FEF6EC; border-left: 4px solid #E8A13A; }
+.prose .cx-note { background: #EEF3FC; border-left: 4px solid #2F6DF6; }
+.prose .cx-example { background: #F5F7FB; border-left: 4px solid #cdd6e4; color: #40474F; font-style: italic; }
+.prose .cx-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 0 0 1.3em; }
+.prose .cx-compare > div { margin-bottom: 0; }
+@media (max-width: 600px) { .prose .cx-compare { grid-template-columns: 1fr; } }
 
 .post { max-width: 720px; }
 .post-back { color: #2F6DF6; font-weight: 600; text-decoration: none; font-size: .92rem; }

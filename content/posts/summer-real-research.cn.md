@@ -3,6 +3,7 @@ title: "一个暑假,他用 AI 帮 NASA 筛出 150 万颗星——AI 时代,孩�
 date: "2026-08-23"
 excerpt: "一个普通高中生,把六周暑假过成了人生第一份工作。最值得家长琢磨的,是他怎么安排这个暑假。"
 readMins: "6"
+category: "ai"
 ---
 
 > 编者按:本文的故事与灵感,源自公众号「甜蜜Susan(朵朵花开了)」的分享,以及 Matteo Paz 的公开报道;由 World Science Academy 整理改写,文中观点为我们所加。

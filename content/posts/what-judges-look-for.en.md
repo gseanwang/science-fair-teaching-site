@@ -3,6 +3,7 @@ title: "A Science-Fair Judge's Honest Take: What Actually Makes a Project Stand 
 date: "2026-08-24"
 excerpt: "I've sat at the judging table and reviewed journal papers. Parents' biggest misread is mistaking 'did a lot' for 'did it well.' The real dividing line hides in a three-minute Q&A."
 readMins: "7"
+category: "judge"
 ---
 
 I've sat at the judging table of science fairs, and I've reviewed papers for academic journals. After enough of both, I've noticed one thing parents most often get wrong: they mistake **"did a lot"** for **"did it well."**

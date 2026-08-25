@@ -1,6 +1,7 @@
 import { content, locales } from "../../../data/content";
-import { blogUi } from "../../../data/blogUi";
+import { blogUi, categories, catAll } from "../../../data/blogUi";
 import { getPosts } from "../../../lib/posts";
+import BlogList from "../../../components/BlogList";
 import { notFound } from "next/navigation";
 
 export function generateStaticParams() {
@@ -24,7 +25,10 @@ export default async function BlogIndex({ params }) {
   const c = content[lang];
   const u = blogUi[lang];
   if (!c || !u) notFound();
-  const posts = getPosts(lang);
+  const posts = getPosts(lang).map((p) => ({
+    slug: p.slug, title: p.title, excerpt: p.excerpt || "",
+    date: p.date || "", readMins: p.readMins || "", category: p.category || "",
+  }));
 
   return (
     <>
@@ -42,19 +46,13 @@ export default async function BlogIndex({ params }) {
         {posts.length === 0 ? (
           <p style={{ textAlign: "center", color: "var(--muted)" }}>{u.empty}</p>
         ) : (
-          <div className="blog-list">
-            {posts.map((p) => (
-              <a key={p.slug} className="post-card" href={`/${lang}/blog/${p.slug}/`}>
-                <div className="post-card-meta">
-                  {p.date}
-                  {p.readMins ? ` · ${p.readMins} ${u.min}` : ""}
-                </div>
-                <h3>{p.title}</h3>
-                {p.excerpt && <p>{p.excerpt}</p>}
-                <span className="post-card-more">{u.readMore} →</span>
-              </a>
-            ))}
-          </div>
+          <BlogList
+            posts={posts}
+            lang={lang}
+            ui={{ readMore: u.readMore, min: u.min }}
+            categories={categories}
+            catAll={catAll[lang]}
+          />
         )}
       </section>
     </>

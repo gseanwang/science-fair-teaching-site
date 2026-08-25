@@ -3,6 +3,7 @@ title: "One Summer, He Used AI to Sift 1.5 Million Stars for NASA — What Is a 
 date: "2026-08-23"
 excerpt: "An ordinary high-schooler turned six weeks of summer into his first real job. The part worth paying attention to isn't how gifted he is — it's how he chose to spend those weeks."
 readMins: "6"
+category: "ai"
 ---
 
 > Editor's note: The story and inspiration here come from a piece shared by the WeChat account "甜蜜Susan (朵朵花开了)" and from public reporting on Matteo Paz. Adapted and expanded by World Science Academy; the commentary is our own.

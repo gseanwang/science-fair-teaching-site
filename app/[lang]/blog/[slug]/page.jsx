@@ -41,13 +41,13 @@ export default async function Post({ params }) {
         {p.readMins ? ` · ${p.readMins} ${u.min}` : ""}
       </div>
       <h1 className="post-title">{p.title}</h1>
-      <div className="post-author">
+      <a className="post-author" href={`/${lang}/faculty/`}>
         <span className="post-author-av">{a.initials}</span>
         <div>
           <div className="post-author-name">{a.name}</div>
           <div className="post-author-role">{a.role[lang]}</div>
         </div>
-      </div>
+      </a>
       {p.cover && <img className="post-hero-img" src={p.cover} alt="" />}
       <div className="prose" dangerouslySetInnerHTML={{ __html: p.html }} />
 

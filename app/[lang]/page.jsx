@@ -1,5 +1,7 @@
 import { content, locales } from "../../data/content";
 import { preLaunch, preLaunchUi } from "../../data/prelaunch";
+import { blogUi } from "../../data/blogUi";
+import { getPosts } from "../../lib/posts";
 import { notFound } from "next/navigation";
 import Faq from "../../components/Faq";
 import Slides from "../../components/Slides";
@@ -30,6 +32,8 @@ export default async function HomePage({ params }) {
   const c = content[lang];
   if (!c) notFound();
   const pl = preLaunchUi[lang];
+  const bu = blogUi[lang];
+  const latestPosts = getPosts(lang).slice(0, 3);
 
   return (
     <>
@@ -62,6 +66,32 @@ export default async function HomePage({ params }) {
           ))}
         </div>
       </section>
+
+      {/* ===================== 實際上課內容(內容先行,上移) ===================== */}
+      <Slides section={c.slidesSection} topics={c.topics} />
+
+      {/* ===================== 最新文章 ===================== */}
+      {latestPosts.length > 0 && (
+        <section className="section">
+          <h2 className="section-title">{c.nav.blog}</h2>
+          <p className="section-lead">{bu.desc}</p>
+          <div className="blog-list">
+            {latestPosts.map((p) => (
+              <a key={p.slug} className="post-card" href={`/${lang}/blog/${p.slug}/`}>
+                <div className="post-card-meta">{p.date}{p.readMins ? ` · ${p.readMins} ${bu.min}` : ""}</div>
+                <h3>{p.title}</h3>
+                {p.excerpt && <p>{p.excerpt}</p>}
+                <span className="post-card-more">{bu.readMore} →</span>
+              </a>
+            ))}
+          </div>
+          <div style={{ textAlign: "center", marginTop: 28 }}>
+            <a className="btn btn-primary" href={`/${lang}/blog/`}>
+              {lang === "en" ? "View all articles →" : lang === "tw" ? "看全部文章 →" : "查看全部文章 →"}
+            </a>
+          </div>
+        </section>
+      )}
 
       {/* ===================== 課程架構 ===================== */}
       <section className="section" id="course">
@@ -97,9 +127,6 @@ export default async function HomePage({ params }) {
           ))}
         </div>
       </section>
-
-      {/* ===================== 實際上課內容 ===================== */}
-      <Slides section={c.slidesSection} topics={c.topics} />
 
       {/* ===================== 為什麼選擇我們 ===================== */}
       <section className="section" id="why">

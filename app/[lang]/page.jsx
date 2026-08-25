@@ -80,18 +80,22 @@ export default async function HomePage({ params }) {
         </section>
       )}
 
-      {/* ===================== 三大特色 ===================== */}
-      <section className="section">
-        <div className="highlight-grid">
-          {c.highlights.map((h, i) => (
-            <div className="highlight-card" key={i}>
-              <div className="highlight-icon">{HL_ICONS[h.icon]}</div>
-              <h3>{h.title}</h3>
-              <p>{h.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+      {/* ===================== 我們能做什麼(灰底帶,與上下區隔) ===================== */}
+      <div className="band">
+        <section className="section">
+          <h2 className="section-title">{c.highlightsTitle}</h2>
+          <p className="section-lead">{c.highlightsLead}</p>
+          <div className="highlight-grid">
+            {c.highlights.map((h, i) => (
+              <div className="highlight-card" key={i}>
+                <div className="highlight-icon">{HL_ICONS[h.icon]}</div>
+                <h3>{h.title}</h3>
+                <p>{h.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
 
       {/* ===================== 實際上課內容 ===================== */}
       <Slides section={c.slidesSection} topics={c.topics} />

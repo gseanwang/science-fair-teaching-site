@@ -42,6 +42,8 @@ export const content = {
       { icon: "present", title: "口头发表训练", desc: "海报展示技巧 + 评审问答模拟,让孩子上场不紧张。" },
       { icon: "ai", title: "正确使用 AI", desc: "教孩子把 AI 当研究利器:懂得提问、查证、守住学术诚信 —— 用得对,才是未来的关键能力。" },
     ],
+    highlightsTitle: "我们能为孩子做什么",
+    highlightsLead: "从选题、研究到站上台,这四件事我们陪孩子一起完成。",
     courseTitle: "课程架构",
     specsTitle: "课程规格",
     specs: [
@@ -213,6 +215,8 @@ export const content = {
       { icon: "present", title: "口頭發表訓練", desc: "海報展示技巧 + 評審問答模擬,讓孩子上場不緊張。" },
       { icon: "ai", title: "正確使用 AI", desc: "教孩子把 AI 當研究利器:懂得提問、查證、守住學術誠信 —— 用得對,才是未來的關鍵能力。" },
     ],
+    highlightsTitle: "我們能為孩子做什麼",
+    highlightsLead: "從選題、研究到站上台,這四件事我們陪孩子一起完成。",
     courseTitle: "課程架構",
     specsTitle: "課程規格",
     specs: [
@@ -384,6 +388,8 @@ export const content = {
       { icon: "present", title: "Presentation Training", desc: "Poster skills plus judge Q&A simulation, so your child is confident on stage." },
       { icon: "ai", title: "Using AI the Right Way", desc: "Students learn to wield AI as a research tool — prompting, fact-checking, and holding the line on academic integrity." },
     ],
+    highlightsTitle: "How We Help",
+    highlightsLead: "From choosing a question to standing on stage — four things we work through with your child.",
     courseTitle: "Program Structure",
     specsTitle: "Program Details",
     specs: [

@@ -19,9 +19,9 @@ export const authors = {
 // 文章分類/系列(五大主軸)。文章 frontmatter 用 category: "teardown" 等對應。
 export const catAll = { tw: "全部", en: "All", cn: "全部" };
 export const categories = {
-  teardown: { tw: "範例拆解", en: "Teardowns", cn: "范例拆解" },
-  judge: { tw: "評審視角", en: "Judge's Eye", cn: "评审视角" },
-  ai: { tw: "AI × 科展", en: "AI × Science Fair", cn: "AI × 科展" },
+  teardown: { tw: "範例拆解", en: "Worked Examples", cn: "范例拆解" },
+  judge: { tw: "評審視角", en: "From the Judging Table", cn: "评审视角" },
+  ai: { tw: "AI × 科展", en: "AI & Science Fairs", cn: "AI × 科展" },
   data: { tw: "科展數據", en: "Data & Trends", cn: "科展数据" },
   guide: { tw: "賽事攻略", en: "Competition Guides", cn: "赛事攻略" },
 };
@@ -38,7 +38,7 @@ export const blogUi = {
     ctaBtn: "預約免費諮詢 →",
   },
   en: {
-    title: "Insights",
+    title: "Science-Fair Insights",
     desc: "Notes on science-fair research, admissions trends, and learning in the age of AI.",
     empty: "Articles coming soon.",
     readMore: "Read more",

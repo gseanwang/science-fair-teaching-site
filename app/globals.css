@@ -205,6 +205,20 @@ h1, h2, h3, h4 { line-height: 1.3; }
 .prose .cx-reveal-body { padding: 16px 18px 6px; }
 .prose .cx-reveal-body p { margin: 0 0 .9em; }
 
+/* Simplified rubric table (original) */
+.prose .cx-rubric-wrap { overflow-x: auto; margin: 0 0 .5em; }
+.prose table.cx-rubric { width: 100%; border-collapse: collapse; font-size: .92rem; min-width: 520px; }
+.prose table.cx-rubric th, .prose table.cx-rubric td { border: 1px solid #e6e9ef; padding: 10px 12px; text-align: left; vertical-align: top; line-height: 1.55; }
+.prose table.cx-rubric thead th { background: #0E1A2B; color: #fff; font-weight: 700; }
+.prose table.cx-rubric td:first-child { font-weight: 700; white-space: nowrap; background: #F5F7FB; }
+.prose table.cx-rubric tbody tr:nth-child(even) td:not(:first-child) { background: #fafbfd; }
+.prose .cx-rubric-cap { font-size: .82rem; color: var(--muted); margin: 0 0 1.6em; }
+.prose .cx-scale { display: flex; gap: 10px; flex-wrap: wrap; margin: 4px 0 16px; }
+.prose .cx-scale-item { font-size: .85rem; font-weight: 700; padding: 6px 14px; border-radius: 999px; }
+.prose .cx-scale-good { background: #F0FAF4; color: #0B7A50; border: 1px solid #b7e2c9; }
+.prose .cx-scale-mid { background: #FEF6EC; color: #B4791E; border: 1px solid #f0d9ad; }
+.prose .cx-scale-warn { background: #FDECEC; color: #C0392B; border: 1px solid #f3c6c1; }
+
 .post { max-width: 720px; }
 .post-back { color: #2F6DF6; font-weight: 600; text-decoration: none; font-size: .92rem; }
 .post-back:hover { text-decoration: underline; }

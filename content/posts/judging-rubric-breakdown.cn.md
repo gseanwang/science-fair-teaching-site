@@ -10,6 +10,34 @@ category: "judge"
 
 看懂这张表,你就等于拿到了答案卷。下面我用美国 **Junior Science and Humanities Symposium(JSHS)公开的 2024–2025 预审评分标准**当例子(这是他们发给参赛者的官方文件),带你一项一项拆——顺便用几个例子,让你看到同一件事「这样写好」和「这样写待加强」的差别。
 
+## 先搞懂:评审怎么打分?
+
+评审会针对**每一个项目**打 0–5 分,分成三档:
+
+<div class="cx-scale">
+<span class="cx-scale-item cx-scale-good">✅ 优秀 4–5 分</span>
+<span class="cx-scale-item cx-scale-mid">🟡 可接受 2–3 分</span>
+<span class="cx-scale-item cx-scale-warn">⚠️ 待加强 0–1 分</span>
+</div>
+
+把各项加起来,就是这份研究的总分——项目越多,越考验你「每一栏都不能掉」。下面是我们整理的**简化版评分表**(中文),先给你一个整体概念:
+
+<div class="cx-rubric-wrap">
+<table class="cx-rubric">
+<thead><tr><th>评分项目</th><th>✅ 优秀(4–5)</th><th>⚠️ 待加强(0–1)</th></tr></thead>
+<tbody>
+<tr><td>摘要</td><td>250 字内讲清目的、假设、方法、结果、结论,逻辑清楚</td><td>太长或太短,五要素讲不清、排列杂乱</td></tr>
+<tr><td>引言</td><td>清楚点出研究问题、目的与对领域的意义</td><td>没说清楚研究问题或目的</td></tr>
+<tr><td>方法</td><td>材料、假设、实验设计、统计、步骤都交代清楚</td><td>材料不全、假设没写、统计缺失</td></tr>
+<tr><td>结果</td><td>数据趋势有分析,图表能独立看懂</td><td>趋势没谈,图表不当或缺失</td></tr>
+<tr><td>讨论 / 结论</td><td>呼应研究问题、谈意义,并主动指出研究限制</td><td>结论脱离数据、不谈限制</td></tr>
+<tr><td>引用格式</td><td>APA 正确,来源正式、已发表、相关</td><td>未用 APA,来源不相关或未发表</td></tr>
+<tr><td>诚信(外部协助 / 致谢)</td><td>如实说明谁帮了、怎么帮</td><td>未交代外部协助</td></tr>
+</tbody>
+</table>
+</div>
+<p class="cx-rubric-cap">▲ 以上为我们整理的简化中文版,方便一眼看懂结构;完整原始版本(含「可接受 2–3」的细部描述)由 Junior Science and Humanities Symposium(JSHS,<a href="https://www.jshs.org/" target="_blank" rel="noopener">jshs.org</a>)官方发布。</p>
+
 ## 一、摘要(Abstract):250 字里要塞满五件事
 
 评分表写得很直接:好的摘要要在 **250 字以内**,清楚交代**目的、假设、方法、结果、结论**这五件事,而且顺序合乎逻辑。

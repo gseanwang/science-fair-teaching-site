@@ -219,11 +219,27 @@ h1, h2, h3, h4 { line-height: 1.3; }
 .prose .cx-scale-mid { background: #FEF6EC; color: #B4791E; border: 1px solid #f0d9ad; }
 .prose .cx-scale-warn { background: #FDECEC; color: #C0392B; border: 1px solid #f3c6c1; }
 
+/* Simple experiment-design diagram (original) */
+.prose .cx-exp { border: 1px solid #dfe4ec; border-radius: 14px; padding: 22px 20px; margin: 6px 0 1.6em; background: linear-gradient(180deg,#fbfdff,#f4f8ff); text-align: center; }
+.prose .cx-exp-title { font-weight: 700; margin-bottom: 16px; }
+.prose .cx-exp-groups { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-bottom: 6px; }
+.prose .cx-exp-g { background: #fff; border: 1px solid #e6e9ef; border-radius: 12px; padding: 14px 8px; font-weight: 600; font-size: .95rem; line-height: 1.4; }
+.prose .cx-exp-g.cx-exp-ctrl { border-style: dashed; color: var(--muted); }
+.prose .cx-exp-ic { font-size: 1.7rem; margin-bottom: 6px; }
+.prose .cx-exp-arrow { color: var(--muted); font-size: .9rem; margin: 12px 0; }
+.prose .cx-exp-arrow::before { content: "↓  "; }
+.prose .cx-exp-out { display: inline-block; background: #0B7A50; color: #fff; font-weight: 700; padding: 10px 22px; border-radius: 999px; }
+@media (max-width: 520px) { .prose .cx-exp-groups { grid-template-columns: 1fr; } }
+
 .post { max-width: 720px; }
 .post-back { color: #2F6DF6; font-weight: 600; text-decoration: none; font-size: .92rem; }
 .post-back:hover { text-decoration: underline; }
 .post-meta { color: var(--muted); font-size: .85rem; font-weight: 600; margin: 18px 0 6px; }
-.post-title { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 2rem; line-height: 1.22; letter-spacing: -.5px; margin: 0 0 24px; }
+.post-title { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 2rem; line-height: 1.22; letter-spacing: -.5px; margin: 0 0 20px; }
+.post-author { display: flex; align-items: center; gap: 12px; margin: 0 0 28px; padding-bottom: 22px; border-bottom: 1px solid #eef1f6; }
+.post-author-av { width: 40px; height: 40px; border-radius: 50%; background: #2F6DF6; color: #fff; font-weight: 700; font-size: .85rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.post-author-name { font-weight: 700; font-size: .95rem; }
+.post-author-role { color: var(--muted); font-size: .82rem; margin-top: 1px; }
 
 .prose { font-size: 1.05rem; line-height: 1.85; color: #2b333d; }
 .prose h2 { font-family: 'Archivo', sans-serif; font-size: 1.38rem; margin: 1.9em 0 .6em; letter-spacing: -.3px; color: var(--brand-dark); }

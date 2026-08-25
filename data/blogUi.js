@@ -8,6 +8,14 @@ export const listen = {
   hint: { tw: "Podcast", en: "Podcast", cn: "Podcast" },
 };
 
+// 作者。文章 frontmatter 用 author: "sean" / "emily" / "jay";省略则预设 sean。
+export const defaultAuthor = "sean";
+export const authors = {
+  sean: { name: "Dr. Sean Wang", initials: "SW", role: { tw: "創辦人・科學研究導師", en: "Founder & Research Mentor", cn: "创办人・科学研究导师" } },
+  emily: { name: "Emily Chou", initials: "EC", role: { tw: "AI 應用・產品設計導師", en: "AI & Product Design Mentor", cn: "AI 应用・产品设计导师" } },
+  jay: { name: "Dr. Jay Lee", initials: "JL", role: { tw: "動物科學・生命科學導師", en: "Animal & Life Science Mentor", cn: "动物科学・生命科学导师" } },
+};
+
 // 文章分類/系列(五大主軸)。文章 frontmatter 用 category: "teardown" 等對應。
 export const catAll = { tw: "全部", en: "All", cn: "全部" };
 export const categories = {

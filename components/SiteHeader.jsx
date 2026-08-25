@@ -8,12 +8,13 @@ export default function SiteHeader({ lang, brand, brandEn, nav, locales }) {
   const close = () => setOpen(false);
 
   const contactLabel = preLaunch ? preLaunchUi[lang].navContact : nav.contact;
+  // 內容先行的順序:先「部落格 / 科展資訊」(知識、資訊),再「上課內容 / 師資」,最後才是「課程」。
   const links = [
-    { href: `/${lang}#course`, label: nav.program },
+    { href: `/${lang}/blog`, label: nav.blog },
+    { href: `/${lang}/competitions`, label: nav.competitions },
     { href: `/${lang}#slides`, label: nav.lessons },
     { href: `/${lang}/faculty`, label: nav.faculty },
-    { href: `/${lang}/competitions`, label: nav.competitions },
-    { href: `/${lang}/blog`, label: nav.blog },
+    { href: `/${lang}#course`, label: nav.program },
     // 費用連結 pre-launch 時隱藏
     ...(preLaunch ? [] : [{ href: `/${lang}#pricing`, label: nav.pricing }]),
     { href: `/${lang}#faq`, label: nav.faq },

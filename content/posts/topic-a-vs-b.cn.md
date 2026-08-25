@@ -25,6 +25,16 @@ A 同学和 B 同学都想研究「声音对植物的影响」。他们各写了
 <p><strong>A 同学 · 大约 1 分。</strong> 问题太大、太模糊:什么音乐?影响什么(株高?叶子数?)?怎么量?没有变量、没有对照。评审光看题目,就知道这份研究很难做扎实。</p>
 <p><strong>B 同学 · 大约 5 分。</strong> 变量清楚(频率)、有对照组(无声)、结果可量(7 天株高)。够小,才测得准;够具体,才有对照。</p>
 <p><strong>关键差别:</strong> 两人研究的其实是同一件事。B 同学只是把「会不会影响」换成了「哪一个变量,对哪一个可量的结果,影响多少」。评审要的,就是这个。</p>
+<div class="cx-exp">
+<div class="cx-exp-title">B 同学的设计,画成图大概长这样 👇</div>
+<div class="cx-exp-groups">
+<div class="cx-exp-g"><div class="cx-exp-ic">🔊</div>50Hz 声音</div>
+<div class="cx-exp-g"><div class="cx-exp-ic">🔊</div>500Hz 声音</div>
+<div class="cx-exp-g cx-exp-ctrl"><div class="cx-exp-ic">🔇</div>无声(对照组)</div>
+</div>
+<div class="cx-exp-arrow">每组 15 株绿豆苗,其他条件相同</div>
+<div class="cx-exp-out">📏 记录第 7 天株高,比较三组差异</div>
+</div>
 </div>
 </details>
 

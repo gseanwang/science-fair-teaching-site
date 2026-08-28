@@ -535,3 +535,4 @@ h1, h2, h3, h4 { line-height: 1.3; }
 /* 全寬底色帶:用來區隔相鄰的區塊,避免板塊之間銜接太硬 */
 .band { background: var(--bg-alt); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 .band .highlight-card { background: var(--surface); }
+.post-author-photo { object-fit: cover; object-position: center 20%; padding: 0; }

@@ -42,7 +42,9 @@ export default async function Post({ params }) {
       </div>
       <h1 className="post-title">{p.title}</h1>
       <a className="post-author" href={`/${lang}/faculty/`}>
-        <span className="post-author-av">{a.initials}</span>
+        {a.photo
+          ? <img className="post-author-av post-author-photo" src={a.photo} alt={a.name} />
+          : <span className="post-author-av">{a.initials}</span>}
         <div>
           <div className="post-author-name">{a.name}</div>
           <div className="post-author-role">{a.role[lang]}</div>

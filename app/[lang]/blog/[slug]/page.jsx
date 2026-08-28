@@ -1,6 +1,7 @@
 import { content } from "../../../../data/content";
 import { blogUi, listen, authors, defaultAuthor } from "../../../../data/blogUi";
 import { getAllPosts, getPost } from "../../../../lib/posts";
+import Subscribe from "../../../../components/Subscribe";
 import { notFound } from "next/navigation";
 
 export function generateStaticParams() {
@@ -62,6 +63,12 @@ export default async function Post({ params }) {
         </div>
         <div className="post-listen-arrow">→</div>
       </a>
+
+      <div className="post-subscribe">
+        <h3>{u.subTitle}</h3>
+        <p>{u.subDesc}</p>
+        <Subscribe />
+      </div>
 
       <div className="post-cta">
         <p>{u.ctaText}</p>

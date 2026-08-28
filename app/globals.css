@@ -536,3 +536,37 @@ h1, h2, h3, h4 { line-height: 1.3; }
 .band { background: var(--bg-alt); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 .band .highlight-card { background: var(--surface); }
 .post-author-photo { object-fit: cover; object-position: center 20%; padding: 0; }
+
+/* ---------- MailerLite 訂閱表單:讓它融入本站風格 ---------- */
+.ml-embedded { max-width: 520px; margin: 0 auto; }
+/* MailerLite 內建外框與底色拿掉,交由我們的區塊控制 */
+.ml-embedded .ml-form-embedContainer,
+.ml-embedded .ml-form-embedWrapper,
+.ml-embedded .ml-form-embedBody { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 !important; }
+.ml-embedded .ml-form-embedContent { margin-bottom: 14px !important; }
+.ml-embedded .ml-form-embedContent h4 { display: none !important; } /* 標題由我們的區塊提供 */
+.ml-embedded input[type="email"],
+.ml-embedded input[type="text"] {
+  width: 100% !important; padding: 13px 16px !important; border-radius: 999px !important;
+  border: 1.5px solid var(--border) !important; font-size: 1rem !important;
+  font-family: inherit !important; background: #fff !important;
+}
+.ml-embedded input[type="email"]:focus { border-color: var(--brand) !important; outline: none !important; }
+.ml-embedded button.primary,
+.ml-embedded .ml-form-embedSubmit button {
+  width: 100% !important; background: var(--brand) !important; color: #fff !important;
+  border: none !important; border-radius: 999px !important; padding: 13px 26px !important;
+  font-weight: 700 !important; font-size: 1rem !important; font-family: inherit !important; cursor: pointer;
+}
+.ml-embedded button.primary:hover,
+.ml-embedded .ml-form-embedSubmit button:hover { background: var(--brand-dark) !important; }
+.ml-embedded .ml-form-successBody { text-align: center; }
+
+/* 深色 CTA 區塊裡的訂閱表單(首頁聯絡區) */
+.cta-band .ml-embedded .ml-form-embedContent,
+.cta-band .ml-embedded p { color: rgba(255,255,255,.85) !important; }
+
+/* 文章結尾的訂閱區塊 */
+.post-subscribe { margin-top: 36px; padding: 30px 28px; border-radius: 18px; background: var(--brand-soft); text-align: center; }
+.post-subscribe h3 { margin: 0 0 6px; font-size: 1.15rem; }
+.post-subscribe > p { margin: 0 0 18px; color: var(--muted); font-size: .95rem; }

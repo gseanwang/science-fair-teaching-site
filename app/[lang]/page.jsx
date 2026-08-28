@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import Faq from "../../components/Faq";
 import Slides from "../../components/Slides";
 import ContactForm from "../../components/ContactForm";
+import Subscribe from "../../components/Subscribe";
 
 export function generateStaticParams() {
   return locales.map((l) => ({ lang: l.code }));
@@ -192,7 +193,7 @@ export default async function HomePage({ params }) {
         <h2>{preLaunch ? pl.heading : c.contact.heading}</h2>
         <p>{preLaunch ? pl.sub : c.contact.subheading}</p>
         <div className="form-wrap">
-          <ContactForm contact={preLaunch ? { ...c.contact, submitText: pl.submit, successMessage: pl.success } : c.contact} />
+          {preLaunch ? <Subscribe /> : <ContactForm contact={c.contact} />}
         </div>
       </section>
     </>

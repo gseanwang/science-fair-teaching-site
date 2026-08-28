@@ -193,7 +193,7 @@ export default async function HomePage({ params }) {
         <h2>{preLaunch ? pl.heading : c.contact.heading}</h2>
         <p>{preLaunch ? pl.sub : c.contact.subheading}</p>
         <div className="form-wrap">
-          {preLaunch ? <Subscribe /> : <ContactForm contact={c.contact} />}
+          {preLaunch ? <Subscribe lang={lang} /> : <ContactForm contact={c.contact} />}
         </div>
       </section>
     </>

@@ -4,7 +4,13 @@ import { useEffect } from "react";
 import { mailerlite } from "../data/mailerlite";
 
 // MailerLite 嵌入式訂閱表單。腳本只會載入一次(多個區塊共用)。
-export default function Subscribe() {
+const HINT = {
+  tw: "送出後請到信箱點擊確認信中的按鈕,才算完成訂閱(若沒收到,請看看垃圾郵件匣)。",
+  en: "After submitting, click the button in the confirmation email to finish subscribing (check your spam folder if it doesn\'t arrive).",
+  cn: "提交后请到邮箱点击确认信中的按钮,才算完成订阅(若没收到,请看看垃圾邮件箱)。",
+};
+
+export default function Subscribe({ lang = "cn" }) {
   useEffect(() => {
     if (typeof window === "undefined") return;
 
@@ -30,5 +36,10 @@ export default function Subscribe() {
     window.ml("account", mailerlite.account);
   }, []);
 
-  return <div className="ml-embedded" data-form={mailerlite.formId} />;
+  return (
+    <>
+      <div className="ml-embedded" data-form={mailerlite.formId} />
+      <p className="subscribe-hint">{HINT[lang] || HINT.cn}</p>
+    </>
+  );
 }

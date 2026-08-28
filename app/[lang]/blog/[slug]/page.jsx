@@ -67,7 +67,7 @@ export default async function Post({ params }) {
       <div className="post-subscribe">
         <h3>{u.subTitle}</h3>
         <p>{u.subDesc}</p>
-        <Subscribe />
+        <Subscribe lang={lang} />
       </div>
 
       <div className="post-cta">

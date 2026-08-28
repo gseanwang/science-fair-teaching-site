@@ -29,7 +29,7 @@ export default function BlogList({ posts, lang, ui, categories, catAll }) {
       <div className="blog-list">
         {shown.map((p) => (
           <a key={p.slug} className={"post-card" + (p.cover ? " has-cover" : "")} href={`/${lang}/blog/${p.slug}/`}>
-            {p.cover && <div className="post-card-cover" style={{ backgroundImage: `url(${p.cover})` }} />}
+            {p.cover && <div className="post-card-cover" style={{ backgroundImage: `url(${p.cover})`, backgroundPosition: p.coverPos || undefined }} />}
             <div className="post-card-body">
               <div className="post-card-meta">
                 {p.category && <span className="post-cat-badge">{catLabel(p.category)}</span>}

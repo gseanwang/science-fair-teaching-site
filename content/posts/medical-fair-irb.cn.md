@@ -4,7 +4,8 @@ date: "2026-08-28"
 excerpt: "同样是做疾病研究,有人顺利晋级,有人连初审都过不了。差别常常不在研究本身,而在一份「做实验前就该签好」的表格。"
 readMins: "8"
 category: "guide"
-cover: "/blog/judge.jpg"
+cover: "/blog/health.jpg"
+coverPos: "center 68%"
 ---
 
 每年都有学生做完一份很不错的健康研究,却在报名时被刷掉——不是因为研究不好,而是因为**一份表格签晚了**。

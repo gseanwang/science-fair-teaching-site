@@ -51,7 +51,7 @@ export default async function Post({ params }) {
           <div className="post-author-role">{a.role[lang]}</div>
         </div>
       </a>
-      {p.cover && <img className="post-hero-img" src={p.cover} alt="" />}
+      {p.cover && <img className="post-hero-img" src={p.cover} alt="" style={p.coverPos ? { objectFit: "cover", objectPosition: p.coverPos, maxHeight: 460 } : undefined} />}
       <div className="prose" dangerouslySetInnerHTML={{ __html: p.html }} />
 
       <a className="post-listen" href={listen.url} target="_blank" rel="noopener noreferrer">

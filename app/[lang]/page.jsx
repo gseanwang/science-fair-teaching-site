@@ -63,7 +63,7 @@ export default async function HomePage({ params }) {
           <div className="blog-list">
             {latestPosts.map((p) => (
               <a key={p.slug} className={"post-card" + (p.cover ? " has-cover" : "")} href={`/${lang}/blog/${p.slug}/`}>
-                {p.cover && <div className="post-card-cover" style={{ backgroundImage: `url(${p.cover})` }} />}
+                {p.cover && <div className="post-card-cover" style={{ backgroundImage: `url(${p.cover})`, backgroundPosition: p.coverPos || undefined }} />}
                 <div className="post-card-body">
                   <div className="post-card-meta">{p.date}{p.readMins ? ` · ${p.readMins} ${bu.min}` : ""}</div>
                   <h3>{p.title}</h3>
